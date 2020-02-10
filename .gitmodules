@@ -1,0 +1,3 @@
+[submodule "static/fonts"]
+	path = static/fonts
+	url = git@github.com:carloscabanero/pragma-web.git
