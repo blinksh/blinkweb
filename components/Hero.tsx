@@ -24,7 +24,7 @@ export default function Hero() {
             <br/>
             <p>
               Connect to your cloud on the go, or code all day from the beach.
-              With Mosh and SSH, Blink is rock-solid, fast, and  and your all-day-long 
+              With Mosh and SSH, Blink is rock-solid, fast, and your all-day-long 
               companion.
               <br/><a className="whats-new"
               target="about:blank"
