@@ -1,0 +1,293 @@
+/* Blink_Shell_Web */
+
+@import 'pragmatapro';
+
+$color1: #242424;
+$color2: #1d1d1d;
+$color3: #0ae0f0;
+$color4: #08bfcc;
+$color5: #ffffff;
+
+$body-bg: $color1;
+
+$body-font-color: $color5;
+$primary-color: $color3;
+
+$font-size: 14px;
+
+$border-radius: 5px;
+$control-padding-y-sm: 0.15rem;
+$control-padding-x-sm: 0.5rem;
+$control-size-sm: 1.8rem;
+
+$base-font-family: PragmataPro, -apple-system, system-ui, BlinkMacSystemFont,
+  'Segoe UI', Roboto;
+
+@import '~spectre.css/src/spectre.scss';
+
+/* Typography */
+h1,
+.h1 {
+  font-size: 66px;
+  line-height: 70px;
+  @media (max-width: $size-sm) {
+    font-size: 40px;
+    line-height: 44px;
+  }
+}
+
+h2,
+.h2 {
+  font-size: 40px;
+  line-height: 44px;
+
+  margin-top: 7rem;
+  margin-bottom: 4rem;
+
+  @media (max-width: $size-sm) {
+    font-size: 28px;
+    line-height: 31px;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+  }
+}
+
+h3,
+.h3 {
+  font-size: 32px;
+  line-height: 58px;
+  @media (max-width: $size-sm) {
+    font-size: 24px;
+    line-height: 38px;
+  }
+}
+
+em,
+.em {
+  font-weight: normal;
+  font-style: normal;
+  color: $color3;
+}
+
+.with-slash:after {
+  content: '/';
+}
+
+.with-quotes:before {
+  content: '<';
+  color: $color3;
+}
+.with-quotes:after {
+  content: '>';
+  color: $color3;
+}
+
+// Button Primary
+.btn {
+  &.btn-primary {
+    background: $primary-color;
+    border-color: $primary-color-dark;
+    color: #045f66;
+    &:focus,
+    &:hover {
+      background: darken($primary-color-dark, 2%);
+      border-color: darken($primary-color-dark, 5%);
+      color: $light-color;
+    }
+    &:active,
+    &.active {
+      background: darken($primary-color-dark, 4%);
+      border-color: darken($primary-color-dark, 7%);
+      color: $light-color;
+    }
+    &.loading {
+      &::after {
+        border-bottom-color: $light-color;
+        border-left-color: $light-color;
+      }
+    }
+  }
+}
+
+body {
+  font-feature-settings: 'liga' 0;
+}
+
+ul.list-with-arrows {
+  list-style-type: none;
+  padding-left: 50px;
+  li {
+    margin-top: 1.25rem;
+  }
+  li:before {
+    content: '――――‣';
+    display: inline-block;
+    margin-right: 25px;
+    margin-left: -55px;
+    color: $primary-color;
+  }
+}
+
+ul.fonts {
+  list-style-type: none;
+  padding-left: 57px;
+  li.selected {
+    border-bottom: 2px solid $primary-color;
+    display: inline-block;
+  }
+  li.selected:before {
+    content: '――――‣';
+    display: inline-block;
+    margin-right: 6px;
+    margin-left: -40px;
+    color: $primary-color;
+  }
+  /*
+  li.selected:after {
+    content: 'i';
+    display: inline-block;
+    color: $body-bg;
+    background: $primary-color;
+    border-radius: 3px;
+    width: 14px;
+    height: 13px;
+    margin-left: 0.5rem;
+    border: 0;
+    font-size: 9px;
+    font-weight: bold;
+    padding-left: 5px;
+    padding-top: 1px;
+    position: absolute;
+    margin-top: 4px;
+  }
+  */
+  @media screen and (max-width: $size-md) {
+    padding-left: 28px;
+  }
+}
+
+.btn-link {
+  padding: 0 8px;
+}
+
+.btn-link.btn-dark {
+  color: $body-bg;
+  padding: 0 0.5rem;
+}
+
+.btn-link.btn-white {
+  color: $body-font-color;
+  padding: 0;
+  margin: 0;
+  margin-right: 0.5rem;
+
+  .icon-white {
+    vertical-align: -4px;
+  }
+}
+
+.icon-blue {
+  fill: $primary-color;
+  vertical-align: middle;
+}
+
+.icon-white {
+  fill: $body-font-color;
+  vertical-align: middle;
+}
+
+.icon-black {
+  fill: $body-bg;
+  vertical-align: middle;
+}
+
+.btn-icon:hover {
+  .icon-blue {
+    fill: $body-font-color;
+  }
+  i .icon-dark {
+    fill: $body-font-color;
+  }
+}
+
+.dimmer {
+  background-color: rgba(0, 0, 0, 0.6);
+  @media screen and (max-width: $size-md) {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+}
+
+.grid-xl {
+  padding: 0 80px;
+
+  @media screen and (max-width: $size-md) {
+    padding: 0 18px;
+  }
+}
+
+.p-inner {
+  padding: 0 80px;
+
+  @media screen and (max-width: $size-md) {
+    padding: 0 18px;
+  }
+}
+
+.alt-bg {
+  background-color: $color4;
+}
+
+.stripes {
+  background: 0% 100% / 1px 100% no-repeat linear-gradient(#2b2d2e, #2b2d2e),
+    50% 100% / 1px 100% no-repeat linear-gradient(#2b2d2e, #2b2d2e),
+    60% 100% / 1px 100% no-repeat linear-gradient(#2b2d2e, #2b2d2e),
+    80% 100% / 1px 100% no-repeat linear-gradient(#2b2d2e, #2b2d2e),
+    100% 100% / 1px 100% no-repeat linear-gradient(#2b2d2e, #2b2d2e);
+  @media screen and (max-width: $size-md) {
+    background: none;
+  }
+}
+
+.dark-label {
+  opacity: 0.2;
+  display: block;
+}
+
+.border-top {
+  border-top: solid 1px #2b2d2e;
+}
+
+code {
+  color: $color5;
+  background: $color2;
+  border-radius: 0;
+}
+
+pre code {
+  line-height: 1;
+  display: block;
+  padding: 1rem;
+  font-size: 0.8rem;
+}
+
+pre.theme {
+  padding: 0;
+  margin-bottom: 3rem;
+  overflow-x: scroll;
+  white-space: pre;
+  display: inline-block;
+
+  span {
+    padding: 0.25rem 0;
+    margin: 0 0.25rem;
+    display: inline-block;
+  }
+  @media screen and (max-width: $size-md) {
+    margin-left: -20px;
+    padding-right: 20px;
+  }
+}
+
+.cookiebanner {
+  padding: 16px !important;
+}
