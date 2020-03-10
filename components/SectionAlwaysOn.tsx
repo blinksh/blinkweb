@@ -106,14 +106,14 @@ export default function SectionAlwaysOn() {
           );
         }
         .dots {
-          background: 15% -50% / 490px 342px no-repeat url('/static/dots1@2x.png'),
-            46% 150% / 490px 342px no-repeat url('/static/dots1@2x.png');
+          background: 15% -50% / 490px 342px no-repeat url('/dots1@2x.png'),
+            46% 150% / 490px 342px no-repeat url('/dots1@2x.png');
         }
 
         @media screen and (max-width: ${SIZE_LG + 100}px) {
           .dots {
-            background: -30% -30% / 490px 342px no-repeat url('/static/dots1@2x.png'),
-              46% 150% / 490px 342px no-repeat url('/static/dots1@2x.png');
+            background: -30% -30% / 490px 342px no-repeat url('/dots1@2x.png'),
+              46% 150% / 490px 342px no-repeat url('/dots1@2x.png');
           }
         }
 

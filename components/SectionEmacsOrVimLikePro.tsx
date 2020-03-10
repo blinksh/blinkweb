@@ -34,7 +34,7 @@ export default function SectionEmacsOrVimLikePro() {
           position: relative;
           margin-left: 80px;
 
-          background: url(/static/full-kb@3x.png) 0 0/540px 240px no-repeat;
+          background: url(/full-kb@3x.png) 0 0/540px 240px no-repeat;
 
           padding-top: 280px;
           padding-bottom: 60px;
@@ -68,7 +68,7 @@ export default function SectionEmacsOrVimLikePro() {
           bottom: 8%;
           width: 100%;
           height: 374px;
-          background: url(/static/full-kb@3x.png) top 0 left 0/825px 374px
+          background: url(/full-kb@3x.png) top 0 left 0/825px 374px
             no-repeat;
         }
 

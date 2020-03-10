@@ -1,5 +1,4 @@
 import React from 'react';
-import '../styles/index.scss';
 import Hero from '../components/Hero';
 import Head from 'next/head';
 import SectionAirTerminals from '../components/SectionAirTerminals';

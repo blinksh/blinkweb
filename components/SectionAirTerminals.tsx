@@ -38,7 +38,7 @@ export default function SectionAirTerminals() {
           margin-top: 8rem;
           width: 100%;
           height: 320px;
-          background: url('/static/airplay@2x.png') no-repeat;
+          background: url('/airplay@2x.png') no-repeat;
           background-size: contain;
           margin-bottom: 8rem;
         }

@@ -87,7 +87,7 @@ export default function SectionComeOnIn() {
         }
         .dark2 {
           background: #000;
-          background-image: url(/static/bg2.jpg);
+          background-image: url(/bg2.jpg);
           background-posion: 50% 50%;
           background-size: cover;
           background-repeat: no-repeat;

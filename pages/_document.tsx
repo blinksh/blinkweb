@@ -20,19 +20,19 @@ export default class MyDocument extends Document {
           />
           <link
             rel="preload"
-            href="/static/fonts/pragmatapro_mono_r_liga_0827-webfont.woff2"
+            href="/fonts/pragmatapro_mono_r_liga_0827-webfont.woff2"
             as="font"
             type="font/woff2"
             crossOrigin="anonymous"
           />
           <link
             rel="preload"
-            href="/static/fonts/pragmatapro_mono_b_liga_0827-webfont.woff2"
+            href="/fonts/pragmatapro_mono_b_liga_0827-webfont.woff2"
             as="font"
             type="font/woff2"
             crossOrigin="anonymous"
           />
-          <link rel="icon" href="/static/favicon.ico" />
+          <link rel="icon" href="/favicon.ico" />
         </Head>
         <body>
           <script

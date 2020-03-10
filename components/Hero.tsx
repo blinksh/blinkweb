@@ -62,7 +62,7 @@ export default function Hero() {
           padding-bottom: 75px;
         }
         .wrapper {
-          background: url(/static/bg.jpg);
+          background: url(/bg.jpg);
           background-position: 50% 0;
           background-repeat: no-repeat;
           background-size: cover;

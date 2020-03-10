@@ -86,7 +86,7 @@ export default function SectionInternalization() {
           }
 
           .world-bg {
-            background: url(/static/world-bg@2x.png) 50% 50% no-repeat;
+            background: url(/world-bg@2x.png) 50% 50% no-repeat;
             background-size: contain;
           }
         `}
