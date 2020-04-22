@@ -10,15 +10,15 @@
     "start": "next start"
   },
   "dependencies": {
-    "next": "9.3.0",
-    "react": "16.13.0",
-    "react-dom": "16.13.0",
+    "next": "9.3.5",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
     "spectre.css": "0.5.8"
   },
   "devDependencies": {
-    "@mdx-js/mdx": "1.5.7",
-    "@types/node": "^13.1.8",
-    "@types/react": "^16.9.17",
+    "@mdx-js/mdx": "1.5.8",
+    "@types/node": "13.13.2",
+    "@types/react": "16.9.34",
     "@zeit/next-mdx": "^1.2.0",
     "babel-plugin-inline-react-svg": "1.1.1",
     "node-sass": "^4.13.1",
