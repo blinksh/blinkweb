@@ -8,7 +8,7 @@ export default class MyDocument extends Document {
         <Head>
           <meta charSet="utf-8" />
           <meta
-            name="vAiewport"
+            name="viewport"
             content="initial-scale=1, viewport-fit=cover"
           />
           <script

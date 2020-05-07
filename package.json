@@ -7,17 +7,33 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "index-docs": "node .next/server/scripts/index-docs.js"
   },
   "dependencies": {
+    "@mapbox/rehype-prism": "^0.4.0",
+    "@types/md5": "^2.2.0",
+    "@zeit/fetch": "^6.0.0",
+    "algoliasearch": "^4.2.0",
+    "github-slugger": "^1.3.0",
+    "gray-matter": "^4.0.2",
+    "md5": "^2.2.1",
+    "mdast-util-to-string": "^1.1.0",
     "next": "9.3.5",
     "react": "16.13.1",
     "react-dom": "16.13.1",
-    "spectre.css": "0.5.8"
+    "rehype-raw": "^4.0.2",
+    "rehype-sanitize": "^3.0.1",
+    "rehype-stringify": "^7.0.0",
+    "remark-rehype": "^6.0.0",
+    "spectre.css": "0.5.8",
+    "unified": "^9.0.0",
+    "unist-util-visit": "^2.0.2"
   },
   "devDependencies": {
     "@mdx-js/mdx": "1.5.8",
     "@types/node": "13.13.2",
+    "@types/node-fetch": "^2.5.7",
     "@types/react": "16.9.34",
     "@zeit/next-mdx": "^1.2.0",
     "babel-plugin-inline-react-svg": "1.1.1",
