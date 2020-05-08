@@ -12,6 +12,7 @@ import {
 } from "../../lib/docs";
 import { getSlug } from "../../lib/utils";
 import React from "react";
+import SideBarLayout from "../../components/SideBarLayout";
 
 // This function gets called at build time
 export const getStaticPaths: GetStaticPaths = async () => {
@@ -59,12 +60,14 @@ export default class Doc extends React.Component<{
       `${this.props.data.title || this.props.route.title} | Blink Shell`;
     // const { tag } = getSlug(this.props.query);
     return (
-      <div>
-        <Head>
-          <title>{title}</title>
-        </Head>
-        <div dangerouslySetInnerHTML={{ __html: this.props.html }}></div>
-      </div>
+      <SideBarLayout>
+        <div>
+          <Head>
+            <title>{title}</title>
+          </Head>
+          <div dangerouslySetInnerHTML={{ __html: this.props.html }}></div>
+        </div>
+      </SideBarLayout>
     );
   }
 }
