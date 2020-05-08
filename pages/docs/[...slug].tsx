@@ -9,6 +9,7 @@ import {
   fetchDocsManifest,
   getPaths,
   findRouteByPath,
+  RouteType,
 } from "../../lib/docs";
 import { getSlug } from "../../lib/utils";
 import React from "react";
@@ -52,6 +53,7 @@ export default class Doc extends React.Component<{
   html: string;
   data: any;
   route: any;
+  routes: Array<RouteType>;
   query: any;
 }> {
   render() {
@@ -65,7 +67,10 @@ export default class Doc extends React.Component<{
           <Head>
             <title>{title}</title>
           </Head>
-          <div dangerouslySetInnerHTML={{ __html: this.props.html }}></div>
+          <div
+            style={{ maxWidth: 860 }}
+            dangerouslySetInnerHTML={{ __html: this.props.html }}
+          ></div>
         </div>
       </SideBarLayout>
     );

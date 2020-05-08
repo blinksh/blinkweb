@@ -2,7 +2,7 @@ import { getLatestTag, getRawFileFromRepo } from "./github";
 import { removeFromLast } from "./utils";
 import { TAG, FORCE_TAG } from "./config";
 
-type RouteType = {
+export type RouteType = {
   title: string;
   fallback: boolean;
   open?: boolean;

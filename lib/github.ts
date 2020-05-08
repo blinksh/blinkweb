@@ -8,6 +8,8 @@ export const GITHUB_API_URL = "https://api.github.com";
 export const RAW_GITHUB_URL = "https://raw.githubusercontent.com";
 export const REPO_NAME = "blinksh/blink";
 
+// https://github.com/blinksh/blink/raw/docs/docs/images/command-blink-image4.jpg
+
 const { readFile, writeFile } = fsPromises;
 
 const USE_CACHE = process.env.USE_CACHE === "true";
@@ -71,13 +73,18 @@ async function getError(res: any) {
 
 export async function getRawFileFromGitHub(path: string) {
   let url = RAW_GITHUB_URL + path;
-  console.log(url);
+
   const res = await fetch(url);
 
   if (res.ok) {
     return res.text();
   }
   throw await getError(res);
+}
+
+export function getRawFileUrl(path: string, tag: string | void) {
+  let url = RAW_GITHUB_URL + `/${REPO_NAME}/${tag}${path}`;
+  return url;
 }
 
 export function getRawFileFromRepo(path: string, tag: string | void) {

@@ -1,9 +1,10 @@
 import React from "react";
 import MenuItem from "./MenuItem";
 import NavAccordion from "./NavAccordion";
+import { RouteType } from "../lib/docs";
 // import Link from "next/link";
 
-const SideBar = ({ router }: any) => {
+const SideBar = ({ router }: any, routes: Array<RouteType>) => {
   return (
     <div className="docs-nav">
       <div className="accordion-container">
