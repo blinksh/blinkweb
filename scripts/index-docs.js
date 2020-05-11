@@ -97,12 +97,10 @@ async function indexDocs() {
     records.push(...record);
     return records;
   }, []);
-  console.log(objects);
 
   // Init a temporal index which will receive the objects
   const tmpIndex = await client.initIndex("blink-docs_tmp");
 
-  console.log("after tmIndex");
   // Copy the settings from the main index to the temporal index
   try {
     await client.copyIndex(index.indexName, tmpIndex.indexName, {
@@ -112,15 +110,11 @@ async function indexDocs() {
     console.log(e);
   }
 
-  console.log("after copyIndex");
-
   while (objects.length) {
     let objs = objects.splice(0, 1000);
-    console.log(objs);
+
     await tmpIndex.saveObjects(objs).wait();
   }
-
-  console.log("after addObjects");
 
   // Move the temporal index to the docs index, this will rename the temporal index
   // so we don't have to remove it

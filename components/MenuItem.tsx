@@ -29,7 +29,7 @@ const MenuItem = ({ url, text }: PropsType) => {
       <Link href={url}>
         <a
           onClick={_closeSideBar}
-          className={router.asPath === url ? "active" : ""}
+          className={router.asPath.indexOf(url) === 0 ? "active" : ""}
         >
           {text}
         </a>

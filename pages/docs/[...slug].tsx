@@ -36,6 +36,8 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     return { props: {} };
   }
 
+  console.dir(manifest.routes);
+
   const route = findRouteByPath(slug, manifest.routes);
 
   if (!route) {
@@ -62,7 +64,7 @@ export default class Doc extends React.Component<{
       `${this.props.data.title || this.props.route.title} | Blink Shell`;
     // const { tag } = getSlug(this.props.query);
     return (
-      <SideBarLayout>
+      <SideBarLayout routes={this.props.routes}>
         <div>
           <Head>
             <title>{title}</title>

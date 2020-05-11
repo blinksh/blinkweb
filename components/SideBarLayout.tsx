@@ -1,5 +1,7 @@
 import React from "react";
 import SideBar from "./SideBar";
+import { useRouter } from "next/router";
+import { RouteType } from "../lib/docs";
 let Logo = require("./logo.svg");
 let Github = require("./icons/github.svg");
 
@@ -50,34 +52,36 @@ const NavBar = () => (
   </div>
 );
 
-export default class SideBarLayout extends React.Component<{}> {
-  render() {
-    return (
-      <div className="docs-container off-canvas off-canvas-sidebar-show">
-        <NavBar />
-        <div id="sidebar" className="docs-sidebar off-canvas-sidebar">
-          <Brand />
-          <SideBar />
-        </div>
-        <a href="#close" className="off-canvas-overlay">
-          {""}
-        </a>
+type PropsType = {
+  routes: Array<RouteType>;
+  children: React.ReactNode;
+};
 
-        <div
-          id="content"
-          className="docs-content off-canvas-content"
-          role="main"
-        >
-          {this.props.children}
-        </div>
-        <style global jsx>
-          {`
-            .docs-content {
-              margin-top: 4rem;
-            }
-          `}
-        </style>
+const SideBarLayout = (props: PropsType) => {
+  let router = useRouter();
+  return (
+    <div className="docs-container off-canvas off-canvas-sidebar-show">
+      <NavBar />
+      <div id="sidebar" className="docs-sidebar off-canvas-sidebar">
+        <Brand />
+        <SideBar router={router} routes={props.routes || []} />
       </div>
-    );
-  }
-}
+      <a href="#close" className="off-canvas-overlay">
+        {""}
+      </a>
+
+      <div id="content" className="docs-content off-canvas-content" role="main">
+        {props.children}
+      </div>
+      <style global jsx>
+        {`
+          .docs-content {
+            margin-top: 4rem;
+          }
+        `}
+      </style>
+    </div>
+  );
+};
+
+export default SideBarLayout;

@@ -319,6 +319,21 @@ pre.theme {
   height: 100%;
   min-height: 100vh;
 
+  .heading a {
+    color: white;
+  }
+
+  h2 {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+  }
+
+  .permalink svg {
+    vertical-align: middle;
+    margin-left: 0.5rem;
+    color: white;
+  }
+
   &.off-canvas-content {
     padding: 0 4rem;
     padding-top: 3.1em;
@@ -604,7 +619,7 @@ pre.theme {
   padding: 0.5rem 1.5rem;
   position: fixed;
   top: 3.5rem;
-  width: 18rem;
+  width: 12rem;
 }
 
 .accordion {

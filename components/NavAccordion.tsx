@@ -1,5 +1,5 @@
 import React, { ReactChildren } from "react";
-import { useRouter } from "next/router";
+import { NextRouter } from "next/router";
 
 import Accordion from "./Accordion";
 
@@ -10,12 +10,14 @@ type PropsType = {
   location?: { pathname: string };
   open?: boolean;
   onAltButtonClick?: () => void;
+  router: NextRouter;
 };
 
 const NavAccordion = (props: PropsType) => {
-  const router = useRouter();
+  const router = props.router;
   const id = (props.path + "nav-acc").replace(/\\/, "--");
-  const open = router.pathname.indexOf(props.path) === 0;
+  const open = router.asPath.indexOf(props.path) === 0;
+  console.log(router.asPath, props.path);
   return (
     <Accordion
       id={id}
