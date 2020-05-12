@@ -28,7 +28,8 @@ const SideBar = (props: PropsType) => {
       {(route.routes || []).map((sub) => (
         <MenuItem
           key={sub.path}
-          url={removeFromLast(sub.path, ".")}
+          as={removeFromLast(sub.path, ".")}
+          url={'/docs/[...slug]'}
           text={sub.title}
         />
       ))}
