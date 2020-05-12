@@ -320,7 +320,7 @@ pre.theme {
   min-height: 100vh;
 
   .heading a {
-    color: white;
+    color: $body-font-color;
   }
 
   h2 {
@@ -331,7 +331,7 @@ pre.theme {
   .permalink svg {
     vertical-align: middle;
     margin-left: 0.5rem;
-    color: white;
+    color: $body-font-color;
   }
 
   &.off-canvas-content {
