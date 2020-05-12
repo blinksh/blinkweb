@@ -18,16 +18,16 @@ const _closeSideBar = () => {
 };
 
 type PropsType = {
-  url: string;
+  href: string;
   as: string;
   text: string;
 };
 
-const MenuItem = ({ url, as, text }: PropsType) => {
+const MenuItem = ({ href, as, text }: PropsType) => {
   const router = useRouter();
   return (
     <li className="menu-item">
-      <Link href={url} as={as}>
+      <Link href={href} as={as}>
         <a
           onClick={_closeSideBar}
           className={router.asPath.indexOf(as) === 0 ? "active" : ""}

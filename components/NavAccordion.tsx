@@ -9,7 +9,6 @@ type PropsType = {
   children: React.ReactNode;
   location?: { pathname: string };
   open?: boolean;
-  onAltButtonClick?: () => void;
   router: NextRouter;
 };
 
@@ -22,7 +21,6 @@ const NavAccordion = (props: PropsType) => {
       id={id}
       title={props.title}
       open={open || props.open}
-      onAltButtonClick={props.onAltButtonClick}
     >
       <ul className="menu menu-nav">{props.children}</ul>
     </Accordion>

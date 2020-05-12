@@ -1,11 +1,9 @@
 import React from "react";
 import MenuItem from "./MenuItem";
 import NavAccordion from "./NavAccordion";
+import { NextRouter, Router } from "next/router";
 import { RouteType } from "../lib/docs";
 import { removeFromLast } from "../lib/utils";
-// import Link from "next/link";
-import { NextRouter, Router } from "next/router";
-import checkCustomRoutes from "next/dist/lib/check-custom-routes";
 
 type PropsType = {
   router: NextRouter;
@@ -29,7 +27,7 @@ const SideBar = (props: PropsType) => {
         <MenuItem
           key={sub.path}
           as={removeFromLast(sub.path, ".")}
-          url={'/docs/[...slug]'}
+          href={'/docs/[...slug]'}
           text={sub.title}
         />
       ))}
