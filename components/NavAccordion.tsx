@@ -17,7 +17,6 @@ const NavAccordion = (props: PropsType) => {
   const router = props.router;
   const id = (props.path + "nav-acc").replace(/\\/, "--");
   const open = router.asPath.indexOf(props.path) === 0;
-  console.log(router.asPath, props.path);
   return (
     <Accordion
       id={id}

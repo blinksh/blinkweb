@@ -36,8 +36,6 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     return { props: {} };
   }
 
-  console.dir(manifest.routes);
-
   const route = findRouteByPath(slug, manifest.routes);
 
   if (!route) {
