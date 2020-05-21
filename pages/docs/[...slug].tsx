@@ -60,7 +60,6 @@ export default class Doc extends React.Component<{
     const title =
       this.props.route &&
       `${this.props.data.title || this.props.route.title} | Blink Shell`;
-    // const { tag } = getSlug(this.props.query);
     return (
       <SideBarLayout routes={this.props.routes}>
         <div>
