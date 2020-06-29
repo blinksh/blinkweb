@@ -1,9 +1,9 @@
-import React from "react";
-import SideBar from "./SideBar";
-import { useRouter } from "next/router";
-import { RouteType } from "../lib/docs";
-let Logo = require("./logo.svg");
-let Github = require("./icons/github.svg");
+import React from 'react';
+import SideBar from './SideBar';
+import { useRouter } from 'next/router';
+import { RouteType } from '../lib/docs';
+let Logo = require('./logo.svg');
+let Github = require('./icons/github.svg');
 
 const Brand = () => <div className="docs-brand"></div>;
 
@@ -14,7 +14,7 @@ const NavBar = () => (
     </a>
     <div className="btns d-flex">
       <Logo />
-      &nbsp; &nbsp;
+      {/* &nbsp; &nbsp;
       <input
         id="dfd"
         placeholder="Search docs"
@@ -29,7 +29,7 @@ const NavBar = () => (
           borderWidth: 1,
         }}
       />
-      &nbsp;
+      &nbsp; */}
       {/* <Github /> */}
     </div>
 
@@ -67,7 +67,7 @@ const SideBarLayout = (props: PropsType) => {
         <SideBar router={router} routes={props.routes || []} />
       </div>
       <a href="#close" className="off-canvas-overlay">
-        {""}
+        {''}
       </a>
 
       <div id="content" className="docs-content off-canvas-content" role="main">

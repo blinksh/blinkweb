@@ -1,19 +1,19 @@
-import Head from "next/head";
-import { GetStaticProps, GetStaticPaths } from "next";
-import fetch from "../../lib/fetch";
-import matter from "gray-matter";
-import markdownToHtml from "../../lib/markdown-to-html";
-import { getRawFileFromRepo } from "../../lib/github";
+import Head from 'next/head';
+import { GetStaticProps, GetStaticPaths } from 'next';
+import fetch from '../../lib/fetch';
+import matter from 'gray-matter';
+import markdownToHtml from '../../lib/markdown-to-html';
+import { getRawFileFromRepo } from '../../lib/github';
 import {
   getCurrentTag,
   fetchDocsManifest,
   getPaths,
   findRouteByPath,
   RouteType,
-} from "../../lib/docs";
-import { getSlug } from "../../lib/utils";
-import React from "react";
-import SideBarLayout from "../../components/SideBarLayout";
+} from '../../lib/docs';
+import { getSlug } from '../../lib/utils';
+import React from 'react';
+import SideBarLayout from '../../components/SideBarLayout';
 
 // This function gets called at build time
 export const getStaticPaths: GetStaticPaths = async () => {
