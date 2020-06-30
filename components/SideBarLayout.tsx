@@ -2,6 +2,7 @@ import React from 'react';
 import SideBar from './SideBar';
 import { useRouter } from 'next/router';
 import { RouteType } from '../lib/docs';
+import PrevNext from './PrevNext';
 let Logo = require('./logo.svg');
 let Github = require('./icons/github.svg');
 
@@ -13,7 +14,9 @@ const NavBar = () => (
       <i className="icon icon-menu" />
     </a>
     <div className="btns d-flex">
-      <Logo />
+      <a href="/">
+        <Logo />
+      </a>
       {/* &nbsp; &nbsp;
       <input
         id="dfd"

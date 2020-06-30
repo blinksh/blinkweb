@@ -1,9 +1,10 @@
 import Head from 'next/head';
 import { GetStaticProps, GetStaticPaths } from 'next';
-import fetch from '../../lib/fetch';
+import PrevNext from '../../components/PrevNext';
 import matter from 'gray-matter';
 import markdownToHtml from '../../lib/markdown-to-html';
 import { getRawFileFromRepo } from '../../lib/github';
+import Router from 'next/router';
 import {
   getCurrentTag,
   fetchDocsManifest,
@@ -56,6 +57,13 @@ export default class Doc extends React.Component<{
   routes: Array<RouteType>;
   query: any;
 }> {
+  componentDidMount() {
+    const { pathname } = Router;
+    if (pathname == '/') {
+      Router.push(this.props.routes[0].path);
+    }
+  }
+
   render() {
     const title =
       this.props.route &&
@@ -70,6 +78,9 @@ export default class Doc extends React.Component<{
             style={{ maxWidth: 860 }}
             dangerouslySetInnerHTML={{ __html: this.props.html }}
           ></div>
+          <div style={{ maxWidth: 860 }}>
+            <PrevNext routes={this.props.routes || []} />
+          </div>
         </div>
       </SideBarLayout>
     );
