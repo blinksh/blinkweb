@@ -74,7 +74,6 @@ async function getError(res: any) {
 export async function getRawFileFromGitHub(path: string) {
   let url = RAW_GITHUB_URL + path;
 
-  console.log(url);
   const res = await fetch(url);
 
   if (res.ok) {

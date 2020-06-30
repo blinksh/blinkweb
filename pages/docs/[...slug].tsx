@@ -4,6 +4,9 @@ import PrevNext from '../../components/PrevNext';
 import matter from 'gray-matter';
 import markdownToHtml from '../../lib/markdown-to-html';
 import { getRawFileFromRepo } from '../../lib/github';
+let DiscordIcon = require('../../components/icons/discord.svg');
+let GithubIcon = require('../../components/icons/github.svg');
+let TwitterIcon = require('../../components/icons/twitter.svg');
 import Router from 'next/router';
 import {
   getCurrentTag,
@@ -80,6 +83,31 @@ export default class Doc extends React.Component<{
           ></div>
           <div style={{ maxWidth: 860 }}>
             <PrevNext routes={this.props.routes || []} />
+            <div className="text-center m-4">
+              <a
+                target="about:blank"
+                href="https://github.com/blinksh/blink"
+                className="btn btn-link btn-white"
+              >
+                <GithubIcon className="icon-white" /> {'<Github>'}
+              </a>
+              <a
+                target="about:blank"
+                href="https://twitter.com/blinkshell"
+                className="btn btn-link btn-white"
+              >
+                <TwitterIcon className="icon-white" /> {'<Twitter>'}
+              </a>
+              <a
+                target="about:blank"
+                href="https://discord.gg/ZTtMfvK"
+                className="btn btn-link btn-white"
+              >
+                <DiscordIcon className="icon-white" /> {'<Discord>'}
+              </a>
+            </div>
+            <br />
+            <br />
           </div>
         </div>
       </SideBarLayout>
