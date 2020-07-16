@@ -17,11 +17,7 @@ const SideBar = (props: PropsType) => {
       router={props.router}
       path={removeFromLast(route.path, ".") || i.toString()}
       title={route.title}
-      open={
-        (route.routes || []).findIndex(
-          (r) => props.router.asPath.indexOf(removeFromLast(r.path, ".")) === 0
-        ) >= 0
-      }
+      open={ true }
     >
       {(route.routes || []).map((sub) => (
         <MenuItem
