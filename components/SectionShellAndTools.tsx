@@ -24,7 +24,7 @@ export default function SectionShellAndTools() {
               <ul className="list-with-arrows">
                 <li>
                   cd, setenv, ls, touch, cp, rm, ln, mv, mkdir, rmdir, df, du,
-                  chksum, chmod, chflags, chgrp, stat, readlink, compress,
+                  chksum, chflags, chgrp, stat, readlink, compress,
                   uncompress, gzip, gunzip,
                 </li>
                 <li>
