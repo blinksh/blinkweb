@@ -31,6 +31,10 @@ export default function Hero() {
               href="https://github.com/blinksh/blink/blob/raw/CHANGELOG.md">
               See What’s New on v13.5.6
             </a>
+              <br/><a className="whats-new"
+              href="/docs">
+              Learn the basics
+            </a>
             </p>
             <br/>
           </div>
