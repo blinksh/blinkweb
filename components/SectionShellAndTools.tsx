@@ -34,7 +34,7 @@ export default function SectionShellAndTools() {
                 <li>curl (includes http, https, scp, sftp...), scp, sftp</li>
                 <li>tar</li>
                 <li>
-                  You can call commands individually. There is redirection (">",
+                  You can call commands individually. There is redirection ("{'>'}",
                   "{'<"'}, {'"&>"'} ...).
                 </li>
               </ul>

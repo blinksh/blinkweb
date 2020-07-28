@@ -99,7 +99,7 @@ export default function SectionDesktopGrade() {
                   <li>tar</li>
                   <li>
                     You can call commands individually. There is redirection
-                    (">", "{'<"'}, {'"&>"'} ...).
+                    ("{'>'}", "{'<"'}, {'"&>"'} ...).
                   </li>
                 </ul>
               </div>
