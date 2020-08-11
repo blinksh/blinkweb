@@ -1,6 +1,6 @@
 {
   "name": "blink-web",
-  "version": "1.0.4",
+  "version": "1.0.7",
   "description": "https://blink.sh",
   "main": "index.js",
   "license": "MIT",
