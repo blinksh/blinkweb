@@ -1,8 +1,18 @@
 import React from "react";
 import "../styles/index.scss";
-// import "../styles/docs.scss";
+import Head from "next/head";
 
-// This default export is required in a new `pages/_app.js` file.
 export default function BlinkApp({ Component, pageProps }: any) {
-  return <Component {...pageProps} />;
+  return (
+      <>
+        <Head>
+          <meta charSet="utf-8" />
+          <meta
+            name="viewport"
+            content="initial-scale=1, viewport-fit=cover"
+          />
+        </Head>
+        <Component {...pageProps} />
+      </>
+    )
 }

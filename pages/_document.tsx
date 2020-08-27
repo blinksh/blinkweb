@@ -6,11 +6,6 @@ export default class MyDocument extends Document {
     return (
       <html lang="en">
         <Head>
-          <meta charSet="utf-8" />
-          <meta
-            name="viewport"
-            content="initial-scale=1, viewport-fit=cover"
-          />
           <script
             type="text/javascript"
             data-padding="16px 16px"
