@@ -28,6 +28,8 @@ export default class MyDocument extends Document {
             crossOrigin="anonymous"
           />
           <link rel="icon" href="/favicon.ico" />
+          <meta name="twitter:card" content="summary_large_image"/>
+          <meta name="twitter:site" content="@blinkshell"/>
         </Head>
         <body>
           <script
