@@ -3,7 +3,7 @@ import { GetStaticProps, GetStaticPaths } from 'next';
 import PrevNext from '../../components/PrevNext';
 import matter from 'gray-matter';
 import markdownToHtml from '../../lib/markdown-to-html';
-import { getRawFileFromRepo } from '../../lib/github';
+import { getRawFileFromRepo, getEditFileUrl } from '../../lib/github';
 let DiscordIcon = require('../../components/icons/discord.svg');
 let GithubIcon = require('../../components/icons/github.svg');
 let TwitterIcon = require('../../components/icons/twitter.svg');
@@ -46,11 +46,13 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     return { props: {} };
   }
 
+  const editUrl = getEditFileUrl(route.path, currentTag);
+
   const md = await getRawFileFromRepo(route.path, currentTag);
   const { content, data } = matter(md);
   const html = await markdownToHtml(route.path, tag, content);
 
-  return { props: { routes: manifest.routes, data, route, html } };
+  return { props: { routes: manifest.routes, data, route, html, editUrl } };
 };
 
 export default class Doc extends React.Component<{
@@ -59,6 +61,7 @@ export default class Doc extends React.Component<{
   route: any;
   routes: Array<RouteType>;
   query: any;
+  editUrl: string;
 }> {
   componentDidMount() {
     const { pathname } = Router;
@@ -81,7 +84,7 @@ export default class Doc extends React.Component<{
             style={{ maxWidth: 860 }}
             dangerouslySetInnerHTML={{ __html: this.props.html }}
           ></div>
-          <div style={{ maxWidth: 860 }}>
+          <div style={{ maxWidth: 860, paddingBottom: '4rem' }}>
             <PrevNext routes={this.props.routes || []} />
             <div className="text-center m-4">
               <a
@@ -105,6 +108,11 @@ export default class Doc extends React.Component<{
               >
                 <DiscordIcon className="icon-white" /> {'<Discord>'}
               </a>
+              <br/>
+              <br/>
+              <br/>
+              <a href={this.props.editUrl}>Edit this page on Github</a>
+              <br/>
             </div>
             <br />
             <br />

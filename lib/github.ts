@@ -83,8 +83,11 @@ export async function getRawFileFromGitHub(path: string) {
 }
 
 export function getRawFileUrl(path: string, tag: string | void) {
-  let url = RAW_GITHUB_URL + `/${REPO_NAME}/${tag}${path}`;
-  return url;
+  return RAW_GITHUB_URL + `/${REPO_NAME}/${tag}${path}`;
+}
+
+export function getEditFileUrl(path: string, tag: string | void) {
+  return GITHUB_URL + `/${REPO_NAME}/edit/${tag}${path}`;
 }
 
 export function getRawFileFromRepo(path: string, tag: string | void) {
