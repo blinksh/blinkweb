@@ -66,6 +66,29 @@ em,
   color: $color3;
 }
 
+.arrow-link {
+  padding-top: 6px;
+  display: inline-block;
+  border-bottom: 1px solid $primary-color;
+  color: $body-font-color;
+}
+.arrow-link:hover {
+  text-decoration: none;
+  color: $primary-color;
+}
+
+.arrow-link::after {
+  content: '――――‣';
+  position: absolute;
+  padding-left: 8px;
+  padding-top: 4px;
+  font-size: 10px;
+  color: $primary-color;
+}
+.arrow-link:hover::after {
+  padding-left: 12px;
+}
+
 // Button Primary
 .btn {
   &.btn-primary {

@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import { SIZE_MD, SIZE_LG } from "./theme";
 let IPadWithShield = require("./ipad-with-shield.svg");
 
@@ -103,6 +104,12 @@ export default function SectionDesktopGrade() {
                   </li>
                 </ul>
               </div>
+            </div>
+            <div className="column col-12">
+              <br/>
+              <Link href="/docs/advanced/unix-roundup">
+                <a className="arrow-link">Learn more about builtin commands</a>
+              </Link>
             </div>
           </div>
         </div>
