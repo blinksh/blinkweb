@@ -4,6 +4,7 @@ import NavAccordion from "./NavAccordion";
 import { NextRouter, Router } from "next/router";
 import { RouteType } from "../lib/docs";
 import { removeFromLast } from "../lib/utils";
+let Logo = require('./logo.svg');
 
 type PropsType = {
   router: NextRouter;
@@ -31,6 +32,9 @@ const SideBar = (props: PropsType) => {
   ));
   return (
     <div className="docs-nav">
+      <a href="/" className="logo">
+        <Logo />
+      </a>
       <div className="accordion-container">{menu}</div>
     </div>
   );
