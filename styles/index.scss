@@ -1,6 +1,7 @@
 /* Blink_Shell_Web */
 
 @import "pragmatapro";
+@import "ptrootui";
 @import "variables";
 
 @import "~spectre.css/src/variables";
@@ -78,7 +79,7 @@ em,
 }
 
 .arrow-link::after {
-  content: '――――‣';
+  content: "――――‣";
   position: absolute;
   padding-left: 8px;
   padding-top: 4px;
@@ -268,13 +269,16 @@ code {
   color: $color5;
   background: $color2;
   border-radius: 0;
+  font-family: "PragmataPro", monospace;
+  font-weight: bold;
 }
 
 pre code {
   line-height: 1;
   display: block;
   padding: 1rem;
-  font-size: 0.8rem;
+  font-size: 1rem;
+  border-radius: 12px;
 }
 
 pre.theme {
@@ -303,7 +307,6 @@ pre.theme {
 
 .off-canvas-sidebar {
   background-color: rgba(20, 20, 20, 0.9) !important;
-  backdrop-filter: blur(5px);
 }
 
 .off-canvas {
@@ -322,6 +325,7 @@ pre.theme {
     padding: 0;
   }
 }
+
 .docs-navbar {
   height: 3.8rem;
   position: fixed;
@@ -336,17 +340,58 @@ pre.theme {
   }
 }
 
+.inline {
+  display: inline-block;
+  background-color: #1877f2;
+  border-radius: 8px;
+  padding: 5px 11px;
+}
+
+.gh-edit {
+  background-color: #222324;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 12px;
+  padding: 12px 12px;
+  color: #a5aaaf;
+  &:hover {
+    color: white;
+    background-color: #1c1f23;
+    text-decoration: none;
+  }
+}
+
 .docs-content {
+  background-color: #040404;
   flex: 1 1 auto;
   width: calc(100vw - 12rem);
   height: 100%;
   min-height: 100vh;
+  font-family: "PT Root UI", sans-serif;
+  font-size: 1.2rem;
+  line-height: 150%;
+
+  a {
+    font-family: "PragmataPro", monospace;
+  }
+
+  ul {
+    color: #a5aaaf;
+  }
 
   .heading a {
     color: $body-font-color;
   }
 
+  h1 {
+    font-family: "PragmataPro", monospace;
+    color: white;
+    font-weight: bold;
+  }
+
   h2 {
+    font-family: "PragmataPro", monospace;
     margin-top: 4rem;
     margin-bottom: 2rem;
   }
@@ -436,6 +481,7 @@ pre.theme {
 
   .docs-block {
     border-radius: $border-radius;
+    background-color: red;
     padding: $unit-2;
 
     &.bg-gray {
@@ -636,6 +682,11 @@ pre.theme {
   }
 }
 
+.logo {
+  svg {
+    margin-bottom: 3.5rem;
+  }
+}
 .docs-nav {
   bottom: 1.5rem;
   overflow-y: auto;
@@ -651,7 +702,7 @@ pre.theme {
   input {
     & ~ .accordion-header {
       color: $color5;
-      font-size: 0.65rem;
+      font-size: 0.9rem;
       // font-weight: 600;
       text-transform: uppercase;
     }
@@ -665,7 +716,7 @@ pre.theme {
 
   .menu {
     .menu-item {
-      font-size: 0.7rem;
+      font-size: 0.9rem;
       padding-left: 1rem;
 
       & > a {
@@ -674,6 +725,10 @@ pre.theme {
         display: inline-block;
         border-radius: 0;
 
+        &.hover {
+          // font-weight: 800;
+          border-bottom: 2px solid #0ae0f0;
+        }
         &.active {
           // font-weight: 800;
           border-bottom: 2px solid #0ae0f0;
