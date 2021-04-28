@@ -347,6 +347,12 @@ pre.theme {
   padding: 5px 11px;
 }
 
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .gh-edit {
   background-color: #222324;
   font-size: 0.7rem;
