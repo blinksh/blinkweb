@@ -1,6 +1,7 @@
 /* Blink_Shell_Web */
 
 @import "pragmatapro";
+@import "ptrootui";
 @import "variables";
 
 @import "~spectre.css/src/variables";
@@ -78,7 +79,7 @@ em,
 }
 
 .arrow-link::after {
-  content: '――――‣';
+  content: "――――‣";
   position: absolute;
   padding-left: 8px;
   padding-top: 4px;
@@ -268,13 +269,16 @@ code {
   color: $color5;
   background: $color2;
   border-radius: 0;
+  font-family: "PragmataPro", monospace;
+  overflow-x: scroll;
 }
 
 pre code {
   line-height: 1;
   display: block;
   padding: 1rem;
-  font-size: 0.8rem;
+  font-size: 1rem;
+  border-radius: 12px;
 }
 
 pre.theme {
@@ -303,7 +307,6 @@ pre.theme {
 
 .off-canvas-sidebar {
   background-color: rgba(20, 20, 20, 0.9) !important;
-  backdrop-filter: blur(5px);
 }
 
 .off-canvas {
@@ -322,12 +325,13 @@ pre.theme {
     padding: 0;
   }
 }
+
 .docs-navbar {
   height: 3.8rem;
   position: fixed;
   right: 0;
   top: 0;
-  z-index: $zindex-2;
+  z-index: 0;
 
   .btn {
     position: absolute;
@@ -336,14 +340,60 @@ pre.theme {
   }
 }
 
+.inline {
+  display: inline-block;
+  background-color: #1877f2;
+  border-radius: 8px;
+  padding: 5px 11px;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gh-edit {
+  background-color: #222324;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 12px;
+  padding: 12px 12px;
+  color: #a5aaaf;
+  &:hover {
+    color: white;
+    background-color: #1c1f23;
+    text-decoration: none;
+  }
+}
+
 .docs-content {
+  background-color: #040404;
   flex: 1 1 auto;
   width: calc(100vw - 12rem);
   height: 100%;
   min-height: 100vh;
+  font-family: "PT Root UI", sans-serif;
+  font-size: 1.2rem;
+  line-height: 150%;
+
+  a {
+    font-family: "PragmataPro", monospace;
+  }
+
+  ul {
+    color: #a5aaaf;
+  }
 
   .heading a {
     color: $body-font-color;
+    font-family: "PT Root UI", sans-serif;
+  }
+
+  h1 {
+    color: white;
+    font-weight: bold;
   }
 
   h2 {
@@ -436,6 +486,7 @@ pre.theme {
 
   .docs-block {
     border-radius: $border-radius;
+    background-color: red;
     padding: $unit-2;
 
     &.bg-gray {
@@ -560,7 +611,9 @@ pre.theme {
 @media (max-width: 960px) {
   .off-canvas {
     .off-canvas-toggle {
-      z-index: $zindex-3;
+      z-index: -10;
+      right: 0;
+      padding-left: 28rem;
     }
   }
 
@@ -582,8 +635,6 @@ pre.theme {
   }
 
   .docs-navbar {
-    backdrop-filter: blur(5px);
-    background: rgba($bg-color, 0.65);
     left: 0;
   }
 
@@ -592,8 +643,7 @@ pre.theme {
       min-width: auto;
       padding: 0 1.5rem;
       width: 100%;
-
-      margin-top: 4.4rem;
+      padding-top: 3rem;
     }
 
     .s-title,
@@ -611,7 +661,8 @@ pre.theme {
 @media (max-width: 600px) {
   .off-canvas {
     .off-canvas-toggle {
-      left: 0.5rem;
+      right: 0;
+      padding-left: 15rem;
     }
   }
 
@@ -636,6 +687,11 @@ pre.theme {
   }
 }
 
+.logo {
+  svg {
+    margin-bottom: 3.5rem;
+  }
+}
 .docs-nav {
   bottom: 1.5rem;
   overflow-y: auto;
@@ -651,7 +707,7 @@ pre.theme {
   input {
     & ~ .accordion-header {
       color: $color5;
-      font-size: 0.65rem;
+      font-size: 0.9rem;
       // font-weight: 600;
       text-transform: uppercase;
     }
@@ -665,7 +721,7 @@ pre.theme {
 
   .menu {
     .menu-item {
-      font-size: 0.7rem;
+      font-size: 0.9rem;
       padding-left: 1rem;
 
       & > a {
@@ -674,6 +730,10 @@ pre.theme {
         display: inline-block;
         border-radius: 0;
 
+        &.hover {
+          // font-weight: 800;
+          border-bottom: 2px solid #0ae0f0;
+        }
         &.active {
           // font-weight: 800;
           border-bottom: 2px solid #0ae0f0;

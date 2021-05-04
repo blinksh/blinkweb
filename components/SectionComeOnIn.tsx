@@ -23,6 +23,14 @@ export default function SectionComeOnIn() {
                   Reach out to us and get our free Community version.
                   Or if you are a student or participant in any other open source project, tweet us and get a free license.
                 </p>
+                <div className="center">
+                  <a
+                    target="about:blank"
+                    href="https://community.blink.sh"
+                    className="btn btn-primary btn-lg">
+                    Sign Up for Community Edition
+                  </a>
+                </div>
                 </div>
               </div>
               <div className="col-12">

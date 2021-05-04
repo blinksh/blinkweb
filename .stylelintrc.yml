@@ -1,0 +1,23 @@
+plugins:
+  - stylelint-scss
+
+extends:
+  - stylelint-config-recommended
+  - stylelint-prettier/recommended
+  - stylelint-config-prettier
+
+rules:
+    prettier/prettier:
+      - true
+
+    no-descending-specificity: null
+
+    at-rule-no-unknown:
+      - true
+      - ignoreAtRules:
+        - function
+        - if
+        - each
+        - include
+        - mixin
+        - extend

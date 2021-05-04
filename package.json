@@ -36,6 +36,12 @@
     "@zeit/next-mdx": "^1.2.0",
     "babel-plugin-inline-react-svg": "2.0.1",
     "node-sass": "5.0.0",
+    "prettier": "^2.2.1",
+    "stylelint": "^13.13.0",
+    "stylelint-config-prettier": "^8.0.2",
+    "stylelint-config-recommended": "^5.0.0",
+    "stylelint-prettier": "^1.2.0",
+    "stylelint-scss": "^3.19.0",
     "typescript": "4.2.4"
   }
 }
