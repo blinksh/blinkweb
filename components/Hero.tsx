@@ -35,7 +35,6 @@ export default function Hero() {
               href="/docs">
               Learn the basics
             </a>
-            </a>
               <br/><a className="whats-new"
               href="/docs/basics/tips-and-tricks">
               Tips & Tricks
