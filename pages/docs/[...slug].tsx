@@ -80,6 +80,11 @@ export default class Doc extends React.Component<{
           <Head>
             <title>{title}</title>
           </Head>
+          <div className="docs-navbar">
+          <a className="off-canvas-toggle btn btn-link btn-action" href="#sidebar">
+               <i className="icon icon-menu" />
+                    </a>
+                </div>
           <a href={this.props.editUrl} className="gh-edit">Edit this page on Github</a>
           <br/>
           <br/>

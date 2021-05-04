@@ -331,7 +331,7 @@ pre.theme {
   position: fixed;
   right: 0;
   top: 0;
-  z-index: $zindex-2;
+  z-index: 0;
 
   .btn {
     position: absolute;
@@ -611,7 +611,9 @@ pre.theme {
 @media (max-width: 960px) {
   .off-canvas {
     .off-canvas-toggle {
-      z-index: $zindex-3;
+      z-index: -10;
+      right: 0;
+      padding-left: 28rem;
     }
   }
 
@@ -633,8 +635,6 @@ pre.theme {
   }
 
   .docs-navbar {
-    backdrop-filter: blur(5px);
-    background: rgba($bg-color, 0.65);
     left: 0;
   }
 
@@ -643,8 +643,7 @@ pre.theme {
       min-width: auto;
       padding: 0 1.5rem;
       width: 100%;
-
-      margin-top: 4.4rem;
+      padding-top: 3rem;
     }
 
     .s-title,
@@ -662,7 +661,8 @@ pre.theme {
 @media (max-width: 600px) {
   .off-canvas {
     .off-canvas-toggle {
-      left: 0.5rem;
+      right: 0;
+      padding-left: 15rem;
     }
   }
 
