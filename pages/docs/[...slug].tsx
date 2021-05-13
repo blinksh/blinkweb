@@ -7,6 +7,7 @@ import { getRawFileFromRepo, getEditFileUrl } from '../../lib/github';
 let DiscordIcon = require('../../components/icons/discord.svg');
 let GithubIcon = require('../../components/icons/github.svg');
 let TwitterIcon = require('../../components/icons/twitter.svg');
+let RedditIcon = require('../../components/icons/reddit.svg');
 import Router from 'next/router';
 import {
   getCurrentTag,
@@ -84,7 +85,7 @@ export default class Doc extends React.Component<{
           <a className="off-canvas-toggle btn btn-link btn-action" href="#sidebar">
                <i className="icon icon-menu" />
                     </a>
-                </div>
+          </div>
           <a href={this.props.editUrl} className="gh-edit">Edit this page on Github</a>
           <br/>
           <br/>
@@ -115,6 +116,13 @@ export default class Doc extends React.Component<{
                 className="btn btn-link btn-white"
               >
                 <DiscordIcon className="icon-white" /> {'<Discord>'}
+              </a>
+              <a
+                target="about:blank"
+                href="https://reddit.com/r/BlinkShell"
+                className="btn btn-link btn-white"
+              >
+                <RedditIcon className="icon-white" /> {'<Reddit>'}
               </a>
               <br/>
               <br/>

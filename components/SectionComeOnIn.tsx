@@ -3,6 +3,7 @@ import React from 'react';
 let TwitterIcon = require('./icons/twitter.svg');
 let GithubIcon = require('./icons/github.svg');
 let DiscordIcon = require('./icons/discord.svg');
+let RedditIcon = require('./icons/reddit.svg');
 
 import {SIZE_MD} from './theme';
 
@@ -54,6 +55,12 @@ export default function SectionComeOnIn() {
                     href="https://discord.gg/ZTtMfvK"
                     className="btn btn-link btn-icon">
                     <DiscordIcon className="icon-blue" />{' '}
+                  </a>
+                  <a
+                    target="about:blank"
+                    href="https://reddit.com/r/BlinkShell"
+                    className="btn btn-link btn-icon">
+                    <RedditIcon className="icon-blue" />{' '}
                   </a>
                 </div>
               </div>

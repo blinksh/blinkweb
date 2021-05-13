@@ -5,6 +5,7 @@ import CodeLike from './CodeLike';
 
 let DiscordIcon = require('./icons/discord.svg');
 let GithubIcon = require('./icons/github.svg');
+let RedditIcon = require('./icons/reddit.svg');
 let TwitterIcon = require('./icons/twitter.svg');
 
 export default function SectionInternalization() {
@@ -39,6 +40,12 @@ export default function SectionInternalization() {
                       className="btn btn-link btn-icon btn-dark"
                       style={{marginBottom: '6px'}}>
                       <GithubIcon className="icon-dark" /> {'<GitHub>'}
+                    </a>
+                    <a
+                      target="about:blank"
+                      href="https://reddit.com/r/BlinkShell"
+                      className="btn btn-link btn-icon btn-dark">
+                      <RedditIcon className="icon-dark" /> {'<Reddit>'}
                     </a>
                   </span>,
                   '',
