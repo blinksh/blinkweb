@@ -3,9 +3,7 @@ const withMDX = require("@zeit/next-mdx")({
 });
 
 module.exports = withMDX({
-  future: {
-    webpack5: true,
-  },
+  webpack5: true,
   pageExtensions: ["js", "ts", "tsx", "md", "mdx"],
   webpack: (config, { dev, isServer }) => {
     if (!dev && isServer) {
