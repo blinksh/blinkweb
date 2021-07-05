@@ -1,8 +1,4 @@
-const withMDX = require("@zeit/next-mdx")({
-  extension: /.mdx?$/,
-});
-
-module.exports = withMDX({
+module.exports ={
   webpack5: true,
   pageExtensions: ["js", "ts", "tsx", "md", "mdx"],
   webpack: (config, { dev, isServer }) => {
@@ -25,4 +21,4 @@ module.exports = withMDX({
 
     return config;
   },
-});
+};
