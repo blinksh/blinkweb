@@ -5,6 +5,7 @@ let Logo = require('./logo.svg');
 let DiscordIcon = require('./icons/discord.svg');
 let GithubIcon = require('./icons/github.svg');
 let TwitterIcon = require('./icons/twitter.svg');
+let RedditIcon = require('./icons/reddit.svg');
 
 export default function Hero() {
   return (
@@ -59,6 +60,9 @@ export default function Hero() {
               </a>
               <a target="about:blank" href="https://discord.gg/ZTtMfvK" className="btn btn-link btn-white">
                 <DiscordIcon className="icon-white" /> {'<Discord>'}
+              </a>
+              <a target="about:blank" href="https://reddit.com/r/BlinkShell" className="btn btn-link btn-white">
+                <RedditIcon className="icon-white" /> {'<Reddit>'}
               </a>
               <div>**/</div>
             </div>
