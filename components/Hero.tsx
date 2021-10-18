@@ -30,7 +30,7 @@ export default function Hero() {
               <br/><a className="whats-new"
               target="about:blank"
               href="https://github.com/blinksh/blink/blob/raw/CHANGELOG.md">
-              See What’s New on v14.0.1
+              See What’s New on v14.0.2
             </a>
               <br />
               <a className="whats-new"
