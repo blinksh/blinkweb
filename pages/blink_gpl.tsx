@@ -6,14 +6,14 @@ const BLINK_GPL = () => (
       <h4>Copyright © 2022 The Blink Shell Project</h4>
 	  <p>Thank you for supporting Blink! Blink Shell is fully Open Source Software. You are welcome to use it, modify it and redistribute it under certain conditions, specified under the terms of the GNU General Public License. In addition, Blink is also subject to certain additional terms under the GNU GPL version 3 section 7.</p>
       <h2>GNU GENERAL PUBLIC LICENSE</h2>
-	  <p style="text-align: center;">Version 3, 29 June 2007</p>
+	  <p style={{textAlign: "center"}}>Version 3, 29 June 2007</p>
 
 	  <p>Copyright &copy; 2007 Free Software Foundation, Inc.
 	    &lt;<a href="http://fsf.org/">http://fsf.org/</a>&gt;</p><p>
 	    Everyone is permitted to copy and distribute verbatim copies
 	    of this license document, but changing it is not allowed.</p>
 
-	  <h3><a name="preamble"></a>Preamble</h3>
+	  <h3><a title="preamble"></a>Preamble</h3>
 
 	  <p>The GNU General Public License is a free, copyleft license for
 	    software and other kinds of works.</p>
@@ -76,9 +76,9 @@ const BLINK_GPL = () => (
 	  <p>The precise terms and conditions for copying, distribution and
 	    modification follow.</p>
 
-	  <h3><a name="terms"></a>TERMS AND CONDITIONS</h3>
+	  <h3><a title="terms"></a>TERMS AND CONDITIONS</h3>
 
-	  <h3><a name="section0"></a>0. Definitions.</h3>
+	  <h3><a id="definitions"></a>0. Definitions.</h3>
 
 	  <p>&ldquo;This License&rdquo; refers to version 3 of the GNU General Public License.</p>
 
@@ -117,7 +117,7 @@ const BLINK_GPL = () => (
 	    the interface presents a list of user commands or options, such as a
 	    menu, a prominent item in the list meets this criterion.</p>
 
-	  <h3><a name="section1"></a>1. Source Code.</h3>
+	  <h3><a id="source-code"></a>1. Source Code.</h3>
 
 	  <p>The &ldquo;source code&rdquo; for a work means the preferred form of the work
 	    for making modifications to it.  &ldquo;Object code&rdquo; means any non-source
@@ -159,7 +159,7 @@ const BLINK_GPL = () => (
 	  <p>The Corresponding Source for a work in source code form is that
 	    same work.</p>
 
-	  <h3><a name="section2"></a>2. Basic Permissions.</h3>
+	  <h3><a id="basic-permissions"></a>2. Basic Permissions.</h3>
 
 	  <p>All rights granted under this License are granted for the term of
 	    copyright on the Program, and are irrevocable provided the stated
@@ -184,7 +184,7 @@ const BLINK_GPL = () => (
 	    the conditions stated below.  Sublicensing is not allowed; section 10
 	    makes it unnecessary.</p>
 
-	  <h3><a name="section3"></a>3. Protecting Users' Legal Rights From Anti-Circumvention Law.</h3>
+	  <h3><a id="user-rights"></a>3. Protecting Users' Legal Rights From Anti-Circumvention Law.</h3>
 
 	  <p>No covered work shall be deemed part of an effective technological
 	    measure under any applicable law fulfilling obligations under article
@@ -200,7 +200,7 @@ const BLINK_GPL = () => (
 	    users, your or third parties' legal rights to forbid circumvention of
 	    technological measures.</p>
 
-	  <h3><a name="section4"></a>4. Conveying Verbatim Copies.</h3>
+	  <h3><a id="copies"></a>4. Conveying Verbatim Copies.</h3>
 
 	  <p>You may convey verbatim copies of the Program's source code as you
 	    receive it, in any medium, provided that you conspicuously and
@@ -213,7 +213,7 @@ const BLINK_GPL = () => (
 	  <p>You may charge any price or no price for each copy that you convey,
 	    and you may offer support or warranty protection for a fee.</p>
 
-	  <h3><a name="section5"></a>5. Conveying Modified Source Versions.</h3>
+	  <h3><a id="versions"></a>5. Conveying Modified Source Versions.</h3>
 
 	  <p>You may convey a work based on the Program, or the modifications to
 	    produce it from the Program, in the form of source code under the
@@ -252,7 +252,7 @@ const BLINK_GPL = () => (
 	    in an aggregate does not cause this License to apply to the other
 	    parts of the aggregate.</p>
 
-	  <h3><a name="section6"></a>6. Conveying Non-Source Forms.</h3>
+	  <h3><a id="forms"></a>6. Conveying Non-Source Forms.</h3>
 
 	  <p>You may convey a covered work in object code form under the terms
 	    of sections 4 and 5, provided that you also convey the
@@ -352,7 +352,7 @@ const BLINK_GPL = () => (
 	    source code form), and must require no special password or key for
 	    unpacking, reading or copying.</p>
 
-	  <h3><a name="section7"></a>7. Additional Terms.</h3>
+	  <h3><a id="addidtional-terms"></a>7. Additional Terms.</h3>
 
 	  <p>&ldquo;Additional permissions&rdquo; are terms that supplement the terms of this
 	    License by making exceptions from one or more of its conditions.
@@ -418,7 +418,7 @@ const BLINK_GPL = () => (
 	    form of a separately written license, or stated as exceptions;
 	    the above requirements apply either way.</p>
 
-	  <h3><a name="section8"></a>8. Termination.</h3>
+	  <h3><a id="termination"></a>8. Termination.</h3>
 
 	  <p>You may not propagate or modify a covered work except as expressly
 	    provided under this License.  Any attempt otherwise to propagate or
@@ -446,7 +446,7 @@ const BLINK_GPL = () => (
 	    reinstated, you do not qualify to receive new licenses for the same
 	    material under section 10.</p>
 
-	  <h3><a name="section9"></a>9. Acceptance Not Required for Having Copies.</h3>
+	  <h3><a id="acceptance"></a>9. Acceptance Not Required for Having Copies.</h3>
 
 	  <p>You are not required to accept this License in order to receive or
 	    run a copy of the Program.  Ancillary propagation of a covered work
@@ -457,7 +457,7 @@ const BLINK_GPL = () => (
 	    not accept this License.  Therefore, by modifying or propagating a
 	    covered work, you indicate your acceptance of this License to do so.</p>
 
-	  <h3><a name="section10"></a>10. Automatic Licensing of Downstream Recipients.</h3>
+	  <h3><a id="automatic-licensing"></a>10. Automatic Licensing of Downstream Recipients.</h3>
 
 	  <p>Each time you convey a covered work, the recipient automatically
 	    receives a license from the original licensors, to run, modify and
@@ -482,7 +482,7 @@ const BLINK_GPL = () => (
 	    any patent claim is infringed by making, using, selling, offering for
 	    sale, or importing the Program or any portion of it.</p>
 
-	  <h3><a name="section11"></a>11. Patents.</h3>
+	  <h3><a id="patents"></a>11. Patents.</h3>
 
 	  <p>A &ldquo;contributor&rdquo; is a copyright holder who authorizes use under this
 	    License of the Program or a work on which the Program is based.  The
@@ -551,7 +551,7 @@ const BLINK_GPL = () => (
 	    any implied license or other defenses to infringement that may
 	    otherwise be available to you under applicable patent law.</p>
 
-	  <h3><a name="section12"></a>12. No Surrender of Others' Freedom.</h3>
+	  <h3><a id="freedom"></a>12. No Surrender of Others' Freedom.</h3>
 
 	  <p>If conditions are imposed on you (whether by court order, agreement or
 	    otherwise) that contradict the conditions of this License, they do not
@@ -563,7 +563,7 @@ const BLINK_GPL = () => (
 	    the Program, the only way you could satisfy both those terms and this
 	    License would be to refrain entirely from conveying the Program.</p>
 
-	  <h3><a name="section13"></a>13. Use with the GNU Affero General Public License.</h3>
+	  <h3><a id="gnu"></a>13. Use with the GNU Affero General Public License.</h3>
 
 	  <p>Notwithstanding any other provision of this License, you have
 	    permission to link or combine any covered work with a work licensed
@@ -574,7 +574,7 @@ const BLINK_GPL = () => (
 	    section 13, concerning interaction through a network will apply to the
 	    combination as such.</p>
 
-	  <h3><a name="section14"></a>14. Revised Versions of this License.</h3>
+	  <h3><a id="revised-versions"></a>14. Revised Versions of this License.</h3>
 
 	  <p>The Free Software Foundation may publish revised and/or new versions of
 	    the GNU General Public License from time to time.  Such new versions will
@@ -600,7 +600,7 @@ const BLINK_GPL = () => (
 	    author or copyright holder as a result of your choosing to follow a
 	    later version.</p>
 
-	  <h3><a name="section15"></a>15. Disclaimer of Warranty.</h3>
+	  <h3><a id="warrany"></a>15. Disclaimer of Warranty.</h3>
 
 	  <p>THERE IS NO WARRANTY FOR THE PROGRAM, TO THE EXTENT PERMITTED BY
 	    APPLICABLE LAW.  EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT
@@ -611,7 +611,7 @@ const BLINK_GPL = () => (
 	    IS WITH YOU.  SHOULD THE PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF
 	    ALL NECESSARY SERVICING, REPAIR OR CORRECTION.</p>
 
-	  <h3><a name="section16"></a>16. Limitation of Liability.</h3>
+	  <h3><a id="limitation"></a>16. Limitation of Liability.</h3>
 
 	  <p>IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING
 	    WILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MODIFIES AND/OR CONVEYS
@@ -623,7 +623,7 @@ const BLINK_GPL = () => (
 	    EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF
 	    SUCH DAMAGES.</p>
 
-	  <h3><a name="section17"></a>17. Interpretation of Sections 15 and 16.</h3>
+	  <h3><a id="interpretation"></a>17. Interpretation of Sections 15 and 16.</h3>
 
 	  <p>If the disclaimer of warranty and limitation of liability provided
 	    above cannot be given local legal effect according to their terms,
@@ -664,7 +664,7 @@ const BLINK_GPL = () => (
 	    comply with the GPL in all other respects, including its requirements
 	    to provide users with source code and the text of the license, we will
 	    not object to your distribution of Blink Shell through the App Store.
-	  </p>
+	  </p></li>
 	    <li>LEGAL NOTICES; NO TRADEMARK LICENSE; ORIGIN.
 	      <p>You must reproduce faithfully all trademark,
 		copyright and other proprietary and legal notices on any copies of the Program or any other
