@@ -21,17 +21,30 @@ export default function Hero() {
         <div className="columns">
           <div className="column col-12">
             <Logo />
-            <h1>THE PRO TERMINAL FOR iOS&nbsp;&&nbsp;iPadOS</h1>
+            <h1>CODING FROM iOS<br/>WILL NEVER FEEL THE SAME</h1>
             <br/>
             <p>
-              Connect to your cloud on the go, or code all day from the beach.
-              With Mosh and SSH, Blink is rock-solid, fast, and your all-day-long
-              companion.
-              <br/><a className="whats-new"
-              target="about:blank"
-              href="https://github.com/blinksh/blink/blob/raw/CHANGELOG.md">
-              See What’s New on v14.0.2
-            </a>
+              Blink is designed to keep up with you. Always on, blazing fast and fitted specifically to your devices.
+              <br/>
+              Blink gives you the freedom to develop your own way. Anywhere.
+              <br/>
+            </p>
+            <div>
+              <br /> 
+              <a
+                target="about:blank" href="http://itunes.apple.com/app/id1594898306"
+                className="btn btn-primary btn-lg">
+                Download now for free
+              </a>
+            </div>
+            <p>
+              <br />
+              <br/>
+              <a className="whats-new"
+                target="about:blank"
+                href="https://github.com/blinksh/blink/blob/raw/CHANGELOG.md">
+                See What’s New on v15.0.1
+              </a>
               <br />
               <a className="whats-new"
                 href="/docs">
@@ -45,9 +58,6 @@ export default function Hero() {
             <br/>
           </div>
           <div className="column col-12 ">
-            <AppStoreLink />
-            <br/>
-            <br/>
             <br/>
             <div className="social">
               <div>/**</div>

@@ -24,7 +24,7 @@ export default function SectionComeOnIn() {
                   Reach out to us and get our free Community version.
                   Or if you are a student or participant in any other open source project, tweet us and get a free license.
                 </p>
-                <div className="center">
+                <div style={{textAlign: "center" }}>
                   <a
                     target="about:blank"
                     href="https://community.blink.sh"

@@ -24,6 +24,13 @@ export default function SectionInternalization() {
                     style={{display: 'inline-block', paddingBottom: '15px'}}>
                     <a
                       target="about:blank"
+                      href="https://github.com/blinksh/blink"
+                      style={{marginBottom: '6px'}}
+                      className="btn btn-link btn-icon btn-dark">
+                      <GithubIcon className="icon-dark" /> {'<GitHub>'}
+                    </a>
+                    <a
+                      target="about:blank"
                       href="https://discord.gg/ZTtMfvK"
                       className="btn btn-link btn-icon btn-dark">
                       <DiscordIcon className="icon-dark" /> {'<Discord>'}
@@ -36,14 +43,8 @@ export default function SectionInternalization() {
                     </a>
                     <a
                       target="about:blank"
-                      href="https://github.com/blinksh/blink"
-                      className="btn btn-link btn-icon btn-dark"
-                      style={{marginBottom: '6px'}}>
-                      <GithubIcon className="icon-dark" /> {'<GitHub>'}
-                    </a>
-                    <a
-                      target="about:blank"
                       href="https://reddit.com/r/BlinkShell"
+                      style={{marginBottom: '8px'}}
                       className="btn btn-link btn-icon btn-dark">
                       <RedditIcon className="icon-dark" /> {'<Reddit>'}
                     </a>

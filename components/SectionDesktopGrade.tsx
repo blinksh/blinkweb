@@ -8,15 +8,15 @@ export default function SectionDesktopGrade() {
     <div>
       <div className="border-top">
         <div className="container grid-xl">
-          <p className="question">
-            You bought the latest Pro device, loved it, and then you wondered...
-            <br />
-            <br />…Can I use it to replace my laptop?
-            <br />
-            <br />
-            <span className="with-quotes">Yes, you can</span>
-          </p>
-          <p className="answer" />
+          <h2>
+          CODE. YOUR NEW SUPERPOWER.
+          </h2>
+          <ul className="list-with-arrows">
+            <li>A VSCode experience fitted to your device, that connects to VSCode web, Codespaces, GitPod or your own Code server.</li>
+            <li>Work on local projects, or seamlessly on remote machines thanks to Blink Files. </li>
+            <li>First class iOS experience, with software and hardware keyboard, and the full edge-to-edge experience.</li>
+          </ul>
+          <p><br/><br/><br/></p>
         </div>
       </div>
       <div className="border-top" style={{ background: "#1d1d1d" }}>
