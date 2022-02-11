@@ -20,7 +20,7 @@
     "@types/node": "16.11.1",
     "@types/react": "17.0.30",
     "babel-plugin-inline-react-svg": "2.0.1",
-    "node-sass": "5.0.0",
+    "node-sass": "7.0.0",
     "prettier": "2.4.1",
     "stylelint": "^13.13.0",
     "stylelint-config-prettier": "9.0.3",
