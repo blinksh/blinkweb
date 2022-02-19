@@ -9,14 +9,16 @@ export default function SectionDesktopGrade() {
       <div className="border-top">
         <div className="container grid-xl">
           <h2>
-          CODE. YOUR NEW SUPERPOWER.
+          BLINK CODE. YOUR NEW SUPERPOWER.
           </h2>
           <ul className="list-with-arrows">
-            <li>A VSCode experience fitted to your device, that connects to VSCode web, Codespaces, GitPod or your own Code server.</li>
+            <li>A coding experience fitted to your device, that connects to Microsoft Visual Studio Code for web, GitHub Codespaces, GitPod or your own VS Code server.</li>
             <li>Work on local projects, or seamlessly on remote machines thanks to Blink Files. </li>
             <li>First class iOS experience, with software and hardware keyboard, and the full edge-to-edge experience.</li>
           </ul>
-          <p><br/><br/><br/></p>
+          <p><br/><br/>
+          Blink Code is not affiliated with nor endorsed by Microsoft.
+          <br/></p>
         </div>
       </div>
       <div className="border-top" style={{ background: "#1d1d1d" }}>
