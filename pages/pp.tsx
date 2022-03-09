@@ -1,7 +1,15 @@
+import Head from 'next/head'
 import SimpleLayout from '../components/SimpleLayout'
 
 const PP = () => (
     <SimpleLayout>
+      <Head>
+        <title>Blink Shell &amp; Code Editor Pivacy Policy</title>
+        <meta
+          name="keywords"
+          content="blink, shell, terminal, mosh, ios, ssh, emulator, code editor"
+        />
+      </Head>
       <h2>The Easiest to Understand Privacy Policy</h2>
       <p>
         Blink Shell app doesn't store your data. We don't even have where.
