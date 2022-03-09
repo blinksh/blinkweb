@@ -59,7 +59,13 @@
     {
       "source": "/docs/cloud-providers/hetzner",
       "destination": "https://docs.blink.sh/cloud-providers/hetzner"
+    },
+    {
+      "source": "/docs/code/getting-started",
+      "destination": "https://docs.blink.sh/advanced/code"
+
     }
   ],
   "trailingSlash": false
 }
+	
