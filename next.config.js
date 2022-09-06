@@ -1,5 +1,4 @@
 module.exports ={
-  webpack5: true,
   pageExtensions: ["js", "ts", "tsx", "md", "mdx"],
   webpack: (config, { dev, isServer }) => {
     if (!dev && isServer) {
