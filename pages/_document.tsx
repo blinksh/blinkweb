@@ -1,5 +1,6 @@
 import React from "react";
 import Document, { Html, Head, Main, NextScript } from "next/document";
+import Script from 'next/script'
 
 export default class MyDocument extends Document {
   render() {
@@ -32,21 +33,19 @@ export default class MyDocument extends Document {
           <meta name="twitter:site" content="@blinkshell"/>
         </Head>
         <body>
-          <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=UA-84834352-1"
-          />
-          <script
-            dangerouslySetInnerHTML={{
-              __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag() { dataLayer.push(arguments); }
-              gtag('js', new Date());
+	   <Script
+		src="https://www.googletagmanager.com/gtag/js?id=UA-84834352-1"
+		strategy="afterInteractive"
+	   />
+	   <Script id="google-analytics" strategy="afterInteractive">
+		{`
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){window.dataLayer.push(arguments);}
+		  gtag('js', new Date());
 
-              gtag('config', 'UA-84834352-1');
-            `
-            }}
-          />
+		  gtag('config', 'UA-84834352-1');
+		`}
+	   </Script>
           <Main />
           <NextScript />
         </body>
