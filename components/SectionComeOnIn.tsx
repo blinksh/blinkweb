@@ -20,9 +20,9 @@ export default function SectionComeOnIn() {
                 </h2>
                 <div style={{maxWidth: 580, marginLeft: 'auto', marginRight: 'auto'}}>
                 <p>
-                  Collaborate in Blink’s development.
+                  Collaborate in Blink’s development.                  
                   Reach out to us and get our free Community version.
-                  Or if you are a student or participant in any other open source project, tweet us and get a free license.
+                  And join us in your preferred social network and ask questions, give feedback and leave your ideas.
                 </p>
                 <div style={{textAlign: "center" }}>
                   <a
