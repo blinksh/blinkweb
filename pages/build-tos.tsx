@@ -106,6 +106,11 @@ const BUILD_TOS = () => (
         <p>We reserve the right, at our sole discretion, to update, change or replace any part of these Terms of Service by posting updates and changes to our website. It is your responsibility to check our website periodically for changes. Your continued use of or access to our website or the Service following the posting of any changes to these Terms of Service constitutes acceptance of those changes.</p>
         <h2 id="contact">Contact</h2>
         <p>Questions about the Terms of Service should be sent to us at <a href="mailto:hello@blink.sh">hello@blink.sh</a></p>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
 
     </SimpleLayout>
   )
