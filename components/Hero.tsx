@@ -6,6 +6,7 @@ let DiscordIcon = require('./icons/discord.svg');
 let GithubIcon = require('./icons/github.svg');
 let TwitterIcon = require('./icons/twitter.svg');
 let RedditIcon = require('./icons/reddit.svg');
+let YoutubeIcon = require('./icons/youtube.svg');
 
 export default function Hero() {
   return (
@@ -30,15 +31,20 @@ export default function Hero() {
               <br/>
             </p>
             <div>
-              <br /> 
+              <br />
               <a
                 target="about:blank" href="http://itunes.apple.com/app/id1594898306"
                 className="btn btn-primary btn-lg">
-                Download now for free
+                Download on AppStore
               </a>
+              <p>
+                  <br/>
+                  Try 1 week free, then<br/>
+                  $19.99/year for Blink+,<br/>
+                  $9.99/month for Blink+Build
+              </p>
             </div>
             <p>
-              <br />
               <br/>
               <a className="whats-new"
                 target="about:blank"
@@ -70,6 +76,9 @@ export default function Hero() {
               </a>
               <a target="about:blank" href="https://discord.gg/ZTtMfvK" className="btn btn-link btn-white">
                 <DiscordIcon className="icon-white" /> {'<Discord>'}
+              </a>
+              <a target="about:blank" href="https://www.youtube.com/@blinkshell" className="btn btn-link btn-white">
+                  <YoutubeIcon className="icon-white" /> {'<Youtube>'}
               </a>
               <a target="about:blank" href="https://reddit.com/r/BlinkShell" className="btn btn-link btn-white">
                 <RedditIcon className="icon-white" /> {'<Reddit>'}

@@ -7,6 +7,7 @@ let DiscordIcon = require('./icons/discord.svg');
 let GithubIcon = require('./icons/github.svg');
 let RedditIcon = require('./icons/reddit.svg');
 let TwitterIcon = require('./icons/twitter.svg');
+let YoutubeIcon = require('./icons/youtube.svg');
 
 export default function SectionInternalization() {
   return (
@@ -40,6 +41,13 @@ export default function SectionInternalization() {
                       href="https://twitter.com/blinkshell"
                       className="btn btn-link btn-icon btn-dark">
                       <TwitterIcon className="icon-dark" /> {'<Twitter>'}
+                    </a>
+                    <a
+                        target="about:blank"
+                        href="https://www.youtube.com/@blinkshell"
+                        style={{marginBottom: '8px'}}
+                        className="btn btn-link btn-icon btn-dark">
+                        <YoutubeIcon className="icon-dark" /> {'<Youtube>'}
                     </a>
                     <a
                       target="about:blank"
