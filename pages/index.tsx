@@ -4,6 +4,7 @@ import Head from 'next/head';
 import SectionAirTerminals from '../components/SectionAirTerminals';
 import SectionAlwaysOn from '../components/SectionAlwaysOn';
 import SectionComeOnIn from '../components/SectionComeOnIn';
+import SectionChooseYourToolbox from '../components/SectionChooseYourToolbox';
 import SectionDesktopGrade from '../components/SectionDesktopGrade';
 import SectionFeaturesSet from '../components/SectionFeaturesSet';
 import SectionYourTerminal from '../components/SectionYourTerminal';
@@ -25,6 +26,7 @@ export default function IndexPage() {
         />
       </Head>
       <Hero />
+      <SectionChooseYourToolbox />
       <SectionFeaturesSet />
       <SectionAlwaysOn />
       <SectionDesktopGrade />

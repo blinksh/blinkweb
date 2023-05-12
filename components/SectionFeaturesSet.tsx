@@ -46,7 +46,7 @@ export default function SectionFeaturesSet() {
     },
   ];
   return (
-    <div className="container grid-xl section">
+    <div className="border-top container grid-xl section">
       <h2 className="with-slash" id="features">
         FEATURES
       </h2>
