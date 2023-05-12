@@ -24,6 +24,7 @@ export default function IndexPage() {
           name="keywords"
           content="blink, shell, terminal, mosh, ios, ssh, emulator"
         />
+        <meta name="apple-itunes-app" content="app-id=1594898306" />
       </Head>
       <Hero />
       <SectionChooseYourToolbox />
