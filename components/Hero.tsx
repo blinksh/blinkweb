@@ -33,7 +33,7 @@ export default function Hero() {
             <div>
               <br />
               <a
-                target="about:blank" target="http://itunes.apple.com/app/id1594898306"
+                target="about:blank" href="http://itunes.apple.com/app/id1594898306"
                 className="btn btn-primary btn-lg">
                 Download on AppStore
               </a>
