@@ -33,13 +33,13 @@ export default function Hero() {
             <div>
               <br />
               <a
-                target="about:blank" href="http://itunes.apple.com/app/id1594898306"
+                target="about:blank" target="http://itunes.apple.com/app/id1594898306"
                 className="btn btn-primary btn-lg">
                 Download on AppStore
               </a>
               <p>
                   <br/>
-                  Try 1 week free. After that, check our <a className="pricing-link">Pricing</a>.
+                  Try 1 week free. After that, check our <a className="pricing-link" href="#choose-package">Pricing</a>.
               </p>
             </div>
             <p>

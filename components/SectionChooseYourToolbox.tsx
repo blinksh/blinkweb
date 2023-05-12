@@ -10,7 +10,7 @@ import CodeLike from './CodeLike';
 
 export default function SectionChooseYourToolbox() {
   return (
-    <div style={{overflowX: 'hidden'}} className="border-top">
+    <div id="choose-package" style={{overflowX: 'hidden'}} className="border-top">
       <div className="dimmer grid-xl">
         <div className="columns col-gapless">
           <div className="col-12">
