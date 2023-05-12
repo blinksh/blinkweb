@@ -27,7 +27,6 @@ export default function IndexPage() {
         <meta name="apple-itunes-app" content="app-id=1594898306" />
       </Head>
       <Hero />
-      <SectionChooseYourToolbox />
       <SectionFeaturesSet />
       <SectionAlwaysOn />
       <SectionDesktopGrade />
@@ -35,6 +34,7 @@ export default function IndexPage() {
       {/* <SectionInternalization /> */}
       <SectionYourTerminal />
       <SectionAirTerminals />
+      <SectionChooseYourToolbox />
       <SectionComeOnIn />
       <Footer />
     </div>

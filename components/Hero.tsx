@@ -22,10 +22,10 @@ export default function Hero() {
         <div className="columns">
           <div className="column col-12">
             <Logo />
-            <h1>CODING FROM iOS<br/>WILL NEVER FEEL THE SAME</h1>
+            <h1>DO DEV WORK ON iOS,<br/>RIGHT OUT OF THE BOX</h1>
             <br/>
             <p>
-              Blink is designed to keep up with you. Always on, blazing fast and fitted specifically to your devices.
+              Blink Shell, Build & Code is the power tool designed to keep up with you. Always on, blazing fast and fitted specifically to your devices.
               <br/>
               Blink gives you the freedom to develop your own way. Anywhere.
               <br/>
@@ -39,9 +39,7 @@ export default function Hero() {
               </a>
               <p>
                   <br/>
-                  Try 1 week free, then<br/>
-                  $19.99/year for Blink+,<br/>
-                  $9.99/month for Blink+Build
+                  Try 1 week free. After that, check our <a className="pricing-link">Pricing</a>.
               </p>
             </div>
             <p>
@@ -165,6 +163,13 @@ export default function Hero() {
         }
         .video {
           background: ${COLOR_BG_DARK};
+        }
+
+        .pricing-link {
+          padding-top: 6px;
+          display: inline-block;
+          border-bottom: 1px solid ${COLOR_PRIMARY};
+          color: white;
         }
 
         .whats-new {

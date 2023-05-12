@@ -4,6 +4,7 @@ let TwitterIcon = require('./icons/twitter.svg');
 let GithubIcon = require('./icons/github.svg');
 let DiscordIcon = require('./icons/discord.svg');
 let RedditIcon = require('./icons/reddit.svg');
+let YoutubeIcon = require('./icons/youtube.svg');
 
 import {SIZE_MD} from './theme';
 
@@ -20,9 +21,9 @@ export default function SectionComeOnIn() {
                 </h2>
                 <div style={{maxWidth: 580, marginLeft: 'auto', marginRight: 'auto'}}>
                 <p>
-                  Collaborate in Blink’s development.                  
-                  Reach out to us and get our free Community version.
-                  And join us in your preferred social network and ask questions, give feedback and leave your ideas.
+                  Collaborate in Blink’s development.
+                  Request access to our free Community version.
+                  And don't forget to join us in your preferred social network for questions, ideas and giving feedback.
                 </p>
                 <div style={{textAlign: "center" }}>
                   <a
@@ -55,6 +56,9 @@ export default function SectionComeOnIn() {
                     href="https://discord.gg/ZTtMfvK"
                     className="btn btn-link btn-icon">
                     <DiscordIcon className="icon-blue" />{' '}
+                  </a>
+                  <a target="about:blank" href="https://www.youtube.com/@blinkshell" className="btn btn-link btn-white">
+                    <YoutubeIcon className="icon-blue" />{' '}
                   </a>
                   <a
                     target="about:blank"
