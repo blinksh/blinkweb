@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from "next/link";
 import {
   SIZE_MD,
   SIZE_LG,
@@ -57,6 +58,12 @@ export default function SectionChooseYourToolbox() {
             </ul>
             <br/>
           </div>
+          <div className="column col-12">
+            <br/>
+            <Link href="/docs/faq#pricing">
+              <a className="arrow-link">CHECK OUR PRICING FAQ</a>
+            </Link>
+          </div>
         </div>
         <br/>
       </div>
@@ -67,6 +74,10 @@ export default function SectionChooseYourToolbox() {
         }
         .list-spacer {
           text-align: center;
+        }
+        .f-centered {
+          align-items: center;
+          padding: 54px;
         }
         `}</style>
     </div>
