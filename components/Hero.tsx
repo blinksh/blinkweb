@@ -51,11 +51,11 @@ export default function Hero() {
               </a>
               <br />
               <a className="whats-new"
-                href="/docs">
+                href="https://docs.blink.sh">
                 Learn the basics
             </a>
               <br/><a className="whats-new"
-              href="/docs/basics/tips-and-tricks">
+              href="https://docs.blink.sh/basics/tips-and-tricks">
               Tips & Tricks
             </a>
             </p>

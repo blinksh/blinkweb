@@ -109,7 +109,7 @@ export default function SectionDesktopGrade() {
             </div>
             <div className="column col-12">
               <br/>
-              <Link href="/docs/advanced/unix-roundup">
+              <Link href="https://docs.blink.sh/advanced/unix-roundup">
                 <a className="arrow-link">Learn more about builtin commands</a>
               </Link>
             </div>
