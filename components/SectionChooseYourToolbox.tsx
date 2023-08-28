@@ -60,7 +60,7 @@ export default function SectionChooseYourToolbox() {
           </div>
           <div className="column col-12">
             <br/>
-            <Link href="/docs/faq#pricing">
+            <Link href="https://docs.blink.sh/faq#pricing">
               <a className="arrow-link">CHECK OUR PRICING FAQ</a>
             </Link>
           </div>
