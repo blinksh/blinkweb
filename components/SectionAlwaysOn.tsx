@@ -43,11 +43,7 @@ export default function SectionAlwaysOn() {
                   <h3><b>Press {"&"} Blogs</b></h3>,
                   '',
                   <h4>
-                    <a
-                      target="about:blank"
-                      href="https://www.theverge.com/circuitbreaker/2018/3/27/17152482/ipad-pro-web-development-setup-how-to-terminal-apps">
-                      <b>{'<TheVerge>'}</b>
-                    </a>
+                    <b>{'<TheVerge>'}</b>
                   </h4>,
                   <b>In some ways, I prefer my iPad / Blink / Digital Ocean setup to coding on my Mac.</b>,
                   '',
