@@ -60,14 +60,6 @@ export default function SectionChooseYourToolbox() {
           </div>
           <div className="column col-12">
             <br/>
-            Are you a Student or member of an Educational Institution?
-            <br/>
-            <Link href="https://docs.blink.sh/faq#back-to-school-is-here">
-              <a className="arrow-link">THE BACK TO SCHOOL CAMPAIGN IS HERE!</a>
-            </Link>
-          </div>
-          <div className="column col-12">
-            <br/>
             <Link href="https://docs.blink.sh/faq#pricing">
               <a className="arrow-link">CHECK OUR PRICING FAQ</a>
             </Link>
