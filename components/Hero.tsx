@@ -45,8 +45,8 @@ export default function Hero() {
             <p>
               <a className="whats-new"
                  target="about:blank"
-                 href="https://docs.blink.sh/faq#back-to-school-is-here">
-                THE BACK TO SCHOOL CAMPAIGN IS HERE!
+                 href="https://docs.blink.sh/faq#back-to-school-2024-is-here">
+                THE BACK TO SCHOOL 2024 CAMPAIGN IS HERE!
               </a>
               <br />
               <a className="whats-new"

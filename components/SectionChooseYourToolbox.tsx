@@ -62,8 +62,8 @@ export default function SectionChooseYourToolbox() {
             <br/>
             Are you a Student or member of an Educational Institution?
             <br/>
-            <Link href="https://docs.blink.sh/faq#back-to-school-is-here">
-              <a className="arrow-link">THE BACK TO SCHOOL CAMPAIGN IS HERE!</a>
+            <Link href="https://docs.blink.sh/faq#back-to-school-2024-is-here">
+              <a className="arrow-link">THE BACK TO SCHOOL 2024 CAMPAIGN IS HERE!</a>
             </Link>
           </div>
           <div className="column col-12">
