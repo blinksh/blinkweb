@@ -44,6 +44,12 @@ export default function Hero() {
             </div>
             <p>
               <a className="whats-new"
+                 target="about:blank"
+                 href="https://docs.blink.sh/faq#back-to-school-is-here">
+                THE BACK TO SCHOOL CAMPAIGN IS HERE!
+              </a>
+              <br />
+              <a className="whats-new"
                 target="about:blank"
                  href="https://github.com/blinksh/blink/discussions/categories/announcements">
                 See our latest Announcements
