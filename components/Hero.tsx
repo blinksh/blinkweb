@@ -45,17 +45,17 @@ export default function Hero() {
             <p>
               <a className="whats-new"
                 target="about:blank"
-                href="https://github.com/blinksh/blink/discussions/categories/announcements">
+                 href="https://github.com/blinksh/blink/discussions/categories/announcements">
                 See our latest Announcements
               </a>
               <br />
               <a className="whats-new"
-                 href="https://docs.blink.sh/basics/navigation">
-                Learn the basics
+                 href="https://docs.blink.sh">
+                Quick Start
             </a>
               <br/><a className="whats-new"
-                      href="https://docs.blink.sh/basics/tips-and-tricks">
-              Tips & Tricks
+                      href="https://github.com/blinksh/blink/discussions">
+              Have questions?
             </a>
             </p>
             <br/>
