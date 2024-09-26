@@ -26,7 +26,7 @@ export default function SectionChooseYourToolbox() {
               <p>
                 The Shell of choice for developers for more than 7 years:
               </p>
-              <li><b>Lightining fast and Fully Customizable terminal:</b>
+              <li><b>Lightning fast and Fully Customizable terminal:</b>
                 <br/>Keyboard Modifiers • Keyboard Shortcuts • Themes • Fonts
               </li>
               <li><b>Shell into remote machines using SSH and Mosh:</b>
