@@ -1,5 +1,4 @@
 import React from 'react';
-import AppStoreLink from './AppStoreLink';
 import {COLOR_BG_DARK, COLOR_PRIMARY, SIZE_MD} from './theme';
 let Logo = require('./logo.svg');
 let DiscordIcon = require('./icons/discord.svg');
@@ -22,7 +21,7 @@ export default function Hero() {
         <div className="columns">
           <div className="column col-12">
             <Logo />
-            <h1>DO DEV WORK ON iOS,<br/>RIGHT OUT OF THE BOX</h1>
+            <h1>THE PRO TERMINAL<br/>FOR iOS and iPadOS</h1>
             <br/>
             <p>
               Blink Shell, Build & Code is the power tool designed to keep up with you. Always on, blazing fast and fitted specifically to your devices.
@@ -35,42 +34,19 @@ export default function Hero() {
               <a
                 target="about:blank" href="http://itunes.apple.com/app/id1594898306"
                 className="btn btn-primary btn-lg">
-                Try it Free
+                Try it free on the App Store 
               </a>
               <p>
                   <br/>
-                  Free trial 1 week. After that, check our <a className="pricing-link" href="#choose-package">Pricing</a>.
+                  Get 2 weeks free. Then just $19.99/year.
               </p>
             </div>
-            <p>
-              <a className="whats-new"
-                 target="about:blank"
-                 href="https://docs.blink.sh/faq#back-to-school-2024-is-here">
-                THE BACK TO SCHOOL 2024 CAMPAIGN IS HERE!
-              </a>
-              <br />
-              <a className="whats-new"
-                target="about:blank"
-                 href="https://github.com/blinksh/blink/discussions/categories/announcements">
-                See our latest Announcements
-              </a>
-              <br />
-              <a className="whats-new"
-                 href="https://docs.blink.sh">
-                Quick Start
-            </a>
-              <br/><a className="whats-new"
-                      href="https://github.com/blinksh/blink/discussions">
-              Have questions?
-            </a>
-            </p>
-            <br/>
           </div>
           <div className="column col-12 ">
             <br/>
             <div className="social">
               <div>/**</div>
-              <div>Join our movement</div>
+              <div>Join us in our Community</div>
               <a target="about:blank" href="https://github.com/blinksh/blink" className="btn btn-link btn-white">
                 <GithubIcon className="icon-white" /> {'<Github>'}
               </a>
@@ -89,6 +65,19 @@ export default function Hero() {
               <div>**/</div>
             </div>
           </div>
+          <br/>
+          <br/>
+          <p>
+          <a className="whats-new" target="about:blank" href="https://docs.blink.sh">
+          Read our Documentation.
+          </a>
+          <br />
+          <a className="whats-new"
+          target="about:blank"
+          href="https://github.com/blinksh/blink/discussions/categories/announcements">
+          See our latest Announcements.
+          </a>
+          </p>
         </div>
       </div>
       <style jsx>{`

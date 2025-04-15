@@ -22,15 +22,14 @@ export default function SectionComeOnIn() {
                 <div style={{maxWidth: 580, marginLeft: 'auto', marginRight: 'auto'}}>
                 <p>
                   Collaborate in Blink’s development.
-                  Request access to our free Community version.
                   And don't forget to join us in your preferred social network for questions, ideas and giving feedback.
                 </p>
                 <div style={{textAlign: "center" }}>
                   <a
                     target="about:blank"
-                    href="https://community.blink.sh"
+                    href="https://github.com/blinksh/blink"
                     className="btn btn-primary btn-lg">
-                    Sign Up for Community Edition
+                      ★ Check us on GitHub ★
                   </a>
                 </div>
                 </div>

@@ -1,4 +1,6 @@
 import React from 'react';
+import Link from "next/link";
+
 import {
   SIZE_MD,
   SIZE_LG,
@@ -23,6 +25,11 @@ export default function SectionEmacsOrVimLikePro() {
                   like Caps as Esc on Vim, others Cmd as Ctrl on Emacs.{' '}
                   <em>Blink champions them all</em>. During your always-on
                   sessions, you are in your zone.
+                </p>
+                <p>
+                  <Link href="/basics/customize/">
+                    <a className="arrow-link">Customize your Keyboard</a>
+                  </Link>
                 </p>
               </div>
             </div>

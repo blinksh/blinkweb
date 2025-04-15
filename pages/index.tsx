@@ -17,12 +17,12 @@ export default function IndexPage() {
       <Head>
         <title>
           Blink Shell is a professional, desktop grade terminal for iOS. With
-          Mosh {'&'} SSH clients for iOS, lightning fast and fully customizable.
+              Mosh {'&'} SSH clients for iOS, local UNIX tools, lightning fast and fully customizable.
           The best terminal for iOS and iPadOS.
         </title>
         <meta
           name="keywords"
-          content="blink, shell, terminal, mosh, ios, ssh, emulator"
+      content="blink, shell, terminal, mosh, ios, ipados, ssh, emulator"
         />
         <meta name="apple-itunes-app" content="app-id=1594898306" />
       </Head>
@@ -34,7 +34,6 @@ export default function IndexPage() {
       {/* <SectionInternalization /> */}
       <SectionYourTerminal />
       <SectionAirTerminals />
-      <SectionChooseYourToolbox />
       <SectionComeOnIn />
       <Footer />
     </div>

@@ -56,6 +56,9 @@ export default function SectionDesktopGrade() {
                 </li>
               </ul>
               <br />
+              <Link href="/docs/advanced/advanced-ssh">
+                <a className="arrow-link">Learn more about SSH in Blink</a>
+              </Link>
               <br />
               <br />
               <br />
@@ -79,27 +82,22 @@ export default function SectionDesktopGrade() {
             <div className="column col-5 col-md-12">
               {" "}
               <p>
-                Go beyond just remote connections from your local device. Manage
+                Go beyond just remote connections from your local device. Manage and edit
                 files from the command line, check on your network or download
                 files.{" "}
-                <em>We just make it better and better on each release.</em>
+                We just make it better and better on each release.
               </p>
             </div>
             <div className="column col-6 hidden-md" />
             <div className="column col-12">
               <div className="cols">
                 <ul className="list-with-arrows">
-                  <li>
-                    cd, setenv, ls, touch, cp, rm, ln, mv, mkdir, rmdir, df, du,
-                    chksum, chflags, chgrp, stat, readlink, compress,
-                    uncompress, gzip, gunzip,
-                  </li>
-                  <li>
-                    pwd, env, printenv, date, uname, id, groups, whoami, uptime
-                  </li>
-                  <li>cat, grep, wc</li>
-                  <li>curl (includes http, https, scp, sftp...), scp, sftp</li>
-                  <li>tar</li>
+                  <li>vim</li>
+                  <li>cat, grep, wc, cd, setenv, ls, touch, cp, rm, ln, mv, mkdir, rmdir, df, du</li>
+                  <li>chksum, chflags, chgrp, stat, readlink</li>
+                  <li>tar, gzip, gunzip</li>
+                  <li>dig, host, nslookup, ssh, mosh, nc, ping, ping6, rlogin and udptunnel</li>
+                  <li>curl, scp, sftp</li>
                   <li>
                     You can call commands individually. There is redirection
                     ("{'>'}", "{'<"'}, {'"&>"'} ...).

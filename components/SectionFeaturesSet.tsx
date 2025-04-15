@@ -6,7 +6,8 @@ let IconPKI = require('./icons/pki.svg');
 let IconKB = require('./icons/keyboard.svg');
 let IconLighting = require('./icons/lighting.svg');
 let IconCustomize = require('./icons/customize.svg');
-let IconOS = require('./icons/opensource.svg');
+let IconOSS = require('./icons/opensource.svg');
+let IconSFTP = require('./icons/sftp.svg');
 let IconCloud = require('./icons/icloud.svg');
 let IPadOS = require('./icons/ipados.svg');
 
@@ -21,8 +22,8 @@ export default function SectionFeaturesSet() {
       icon: IconPKI,
     },
     {
-      name: 'Open Source',
-      icon: IconOS,
+      name: 'SFTP & Files.app',
+      icon: IconSFTP,
     },
     {
       name: 'Sync your devices',
@@ -41,8 +42,8 @@ export default function SectionFeaturesSet() {
       icon: IconKB,
     },
     {
-      name: 'Multiple windows',
-      icon: IPadOS,
+      name: 'Open Source',
+      icon: IconOSS,
     },
   ];
   return (

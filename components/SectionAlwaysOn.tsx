@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from "next/link";
 import {
   SIZE_MD,
   SIZE_LG,
@@ -31,6 +32,10 @@ export default function SectionAlwaysOn() {
                   <em>You can type as if you were in your local machine</em>.
                   <br />
                   <br />It feels like magic.
+                  <br/><br/>
+                  <Link href="/docs/advanced/advanced-mosh">
+                  <a className="arrow-link">All About Mosh</a>
+                  </Link>
                 </p>
               </div>
             </div>
@@ -43,7 +48,11 @@ export default function SectionAlwaysOn() {
                   <h3><b>Press {"&"} Blogs</b></h3>,
                   '',
                   <h4>
-                    <b>{'<TheVerge>'}</b>
+                  <a
+                  target="about:blank"
+                  href="https://www.theverge.com/circuitbreaker/2018/3/27/17152482/ipad-pro-web-development-setup-how-to-terminal-apps">
+                  <b>{'<TheVerge>'}</b>
+                  </a>
                   </h4>,
                   <b>In some ways, I prefer my iPad / Blink / Digital Ocean setup to coding on my Mac.</b>,
                   '',

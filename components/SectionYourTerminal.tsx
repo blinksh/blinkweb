@@ -1,4 +1,6 @@
+import Link from "next/link";
 import React from "react";
+
 import {
   SIZE_MD,
   SIZE_LG,
@@ -19,12 +21,15 @@ export default function SectionYourTerminal() {
           <p>
             We know how important it is for your long work sessions to have the
             color theme and font you feel comfortable looking at all day.{" "}
-            <em>
-              You can rock your terminal and roll your own themes and fonts
-              beyond our included ones
-            </em>. And yes, we include Pragmata Pro by default!
+            You can rock your terminal and roll your own themes and fonts
+            beyond our included ones.
+            <em> And yes, we include Pragmata Pro by default!</em>
           </p>
-
+          <p>
+          <Link href="https://github.com/blinksh/themes">
+          <a className="arrow-link">Themes Gallery</a>
+          </Link>
+          </p>
           <ThemeView theme="bright-lights" />
           <ThemeView theme="wwdc" />
           <ThemeView theme="flat" />
@@ -54,6 +59,7 @@ export default function SectionYourTerminal() {
               </li>
               <li>Roboto Mono</li>
               <li>Source Code Pro</li>
+              <li><Link href="https://github.com/blinksh/fonts"><a className="arrow-link">Fonts Gallery</a></Link></li>
             </ul>
           </div>
         </div>

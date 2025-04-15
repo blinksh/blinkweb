@@ -1,3 +1,4 @@
+import AppStoreLink from './AppStoreLink';
 import React from 'react';
 import { SIZE_MD } from './theme';
 
@@ -19,6 +20,7 @@ export default function SectionInternalization() {
               <CodeLike
                 theme="light"
                 lines={[
+                    <AppStoreLink/>,
                   '/**',
                   <h3>Our community</h3>,
                   <span

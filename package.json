@@ -13,7 +13,6 @@
     "next": "12.2.5",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "sass": "^1.54.8",
     "spectre.css": "0.5.9",
     "unified": "10.1.2"
   },
@@ -21,13 +20,14 @@
     "@types/node": "18.7.15",
     "@types/react": "18.0.18",
     "babel-plugin-inline-react-svg": "2.0.1",
-    "node-sass": "7.0.1",
     "prettier": "2.7.1",
+    "sass": "^1.86.0",
     "stylelint": "14.11.0",
     "stylelint-config-prettier": "9.0.3",
     "stylelint-config-recommended": "9.0.0",
     "stylelint-prettier": "2.0.0",
     "stylelint-scss": "4.3.0",
-    "typescript": "4.8.2"
+    "typescript": "4.8.2",
+    "yarn": "^1.22.22"
   }
 }
